@@ -1,0 +1,447 @@
+2014-10-30 13:39:52,041 INFO  - Request Start for Transaction manager.
+2014-10-30 13:39:52,290 INFO  - Opened transaction <1> for pipeline <WIPipeline>
+2014-10-30 13:39:52,290 INFO  - Input File name is <cdrFromMSC_2008_04_25_01.csv> for transaction <1>
+2014-10-30 13:39:52,412 INFO  - Transaction <1> closed
+2014-10-30 13:39:52,471 INFO  - Opened transaction <2> for pipeline <WIPipeline>
+2014-10-30 13:39:52,471 INFO  - Input File name is <cdrFromMSC_2008_04_06_21.csv> for transaction <2>
+2014-10-30 13:39:53,458 INFO  - Transaction <2> closed
+2014-10-30 13:39:53,524 INFO  - Opened transaction <3> for pipeline <WIPipeline>
+2014-10-30 13:39:53,524 INFO  - Input File name is <cdrFromMSC_2008_05_20_09.csv> for transaction <3>
+2014-10-30 13:39:53,940 INFO  - Transaction <3> closed
+2014-10-30 13:39:54,046 INFO  - Opened transaction <4> for pipeline <WIPipeline>
+2014-10-30 13:39:54,046 INFO  - Input File name is <cdrFromMSC_2008_04_16_00.csv> for transaction <4>
+2014-10-30 13:39:54,103 INFO  - Transaction <4> closed
+2014-10-30 13:39:54,171 INFO  - Opened transaction <5> for pipeline <WIPipeline>
+2014-10-30 13:39:54,171 INFO  - Input File name is <cdrFromMSC_2008_02_14_23.csv> for transaction <5>
+2014-10-30 13:39:54,371 INFO  - Transaction <5> closed
+2014-10-30 13:39:54,460 INFO  - Opened transaction <6> for pipeline <WIPipeline>
+2014-10-30 13:39:54,460 INFO  - Input File name is <cdrFromMSC_2008_05_16_13.csv> for transaction <6>
+2014-10-30 13:39:54,707 INFO  - Transaction <6> closed
+2014-10-30 13:39:54,745 INFO  - Opened transaction <7> for pipeline <WIPipeline>
+2014-10-30 13:39:54,746 INFO  - Input File name is <cdrFromMSC_2008_04_04_15.csv> for transaction <7>
+2014-10-30 13:39:54,882 INFO  - Transaction <7> closed
+2014-10-30 13:39:54,918 INFO  - Opened transaction <8> for pipeline <WIPipeline>
+2014-10-30 13:39:54,919 INFO  - Input File name is <cdrFromMSC_2008_02_23_20.csv> for transaction <8>
+2014-10-30 13:39:55,218 INFO  - Transaction <8> closed
+2014-10-30 13:39:55,262 INFO  - Opened transaction <9> for pipeline <WIPipeline>
+2014-10-30 13:39:55,262 INFO  - Input File name is <cdrFromMSC_2008_04_02_14.csv> for transaction <9>
+2014-10-30 13:39:55,331 INFO  - Transaction <9> closed
+2014-10-30 13:39:55,383 INFO  - Opened transaction <10> for pipeline <WIPipeline>
+2014-10-30 13:39:55,383 INFO  - Input File name is <cdrFromMSC_2008_05_27_09.csv> for transaction <10>
+2014-10-30 13:39:55,664 INFO  - Transaction <10> closed
+2014-10-30 13:39:55,733 INFO  - Opened transaction <11> for pipeline <WIPipeline>
+2014-10-30 13:39:55,734 INFO  - Input File name is <cdrFromMSC_2008_04_02_21.csv> for transaction <11>
+2014-10-30 13:39:55,987 INFO  - Transaction <11> closed
+2014-10-30 13:39:56,060 INFO  - Opened transaction <12> for pipeline <WIPipeline>
+2014-10-30 13:39:56,061 INFO  - Input File name is <cdrFromMSC_2008_02_28_10.csv> for transaction <12>
+2014-10-30 13:39:56,221 INFO  - Transaction <12> closed
+2014-10-30 13:39:56,227 INFO  - Opened transaction <13> for pipeline <WIPipeline>
+2014-10-30 13:39:56,227 INFO  - Input File name is <cdrFromMSC_2008_05_01_09.csv> for transaction <13>
+2014-10-30 13:39:56,424 INFO  - Transaction <13> closed
+2014-10-30 13:39:56,525 INFO  - Opened transaction <14> for pipeline <WIPipeline>
+2014-10-30 13:39:56,525 INFO  - Input File name is <cdrFromMSC_2008_05_26_06.csv> for transaction <14>
+2014-10-30 13:39:56,610 INFO  - Transaction <14> closed
+2014-10-30 13:39:56,660 INFO  - Opened transaction <15> for pipeline <WIPipeline>
+2014-10-30 13:39:56,660 INFO  - Input File name is <cdrFromMSC_2008_05_09_23.csv> for transaction <15>
+2014-10-30 13:39:56,772 INFO  - Transaction <15> closed
+2014-10-30 13:39:56,824 INFO  - Opened transaction <16> for pipeline <WIPipeline>
+2014-10-30 13:39:56,850 INFO  - Input File name is <cdrFromMSC_2008_03_24_19.csv> for transaction <16>
+2014-10-30 13:39:57,058 INFO  - Transaction <16> closed
+2014-10-30 13:39:57,093 INFO  - Opened transaction <17> for pipeline <WIPipeline>
+2014-10-30 13:39:57,094 INFO  - Input File name is <cdrFromMSC_2008_03_05_14.csv> for transaction <17>
+2014-10-30 13:39:57,152 INFO  - Transaction <17> closed
+2014-10-30 13:39:57,213 INFO  - Opened transaction <18> for pipeline <WIPipeline>
+2014-10-30 13:39:57,214 INFO  - Input File name is <cdrFromMSC_2008_05_19_03.csv> for transaction <18>
+2014-10-30 13:39:57,258 INFO  - Transaction <18> closed
+2014-10-30 13:39:57,350 INFO  - Opened transaction <20> for pipeline <WIPipeline>
+2014-10-30 13:39:57,350 INFO  - Input File name is <cdrFromMSC_2008_03_06_01.csv> for transaction <20>
+2014-10-30 13:39:57,388 INFO  - Transaction <20> closed
+2014-10-30 13:39:57,489 INFO  - Opened transaction <22> for pipeline <WIPipeline>
+2014-10-30 13:39:57,489 INFO  - Input File name is <cdrFromMSC_2008_03_21_18.csv> for transaction <22>
+2014-10-30 13:39:57,573 INFO  - Transaction <22> closed
+2014-10-30 13:39:57,621 INFO  - Opened transaction <25> for pipeline <WIPipeline>
+2014-10-30 13:39:57,621 INFO  - Input File name is <cdrFromMSC_2008_02_13_08.csv> for transaction <25>
+2014-10-30 13:39:57,725 INFO  - Transaction <25> closed
+2014-10-30 13:39:57,753 INFO  - Opened transaction <27> for pipeline <WIPipeline>
+2014-10-30 13:39:57,753 INFO  - Input File name is <cdrFromMSC_2008_03_07_09.csv> for transaction <27>
+2014-10-30 13:39:57,880 INFO  - Transaction <27> closed
+2014-10-30 13:39:57,906 INFO  - Opened transaction <29> for pipeline <WIPipeline>
+2014-10-30 13:39:57,906 INFO  - Input File name is <cdrFromMSC_2008_05_09_03.csv> for transaction <29>
+2014-10-30 13:39:57,945 INFO  - Transaction <29> closed
+2014-10-30 13:39:58,040 INFO  - Opened transaction <31> for pipeline <WIPipeline>
+2014-10-30 13:39:58,040 INFO  - Input File name is <cdrFromMSC_2008_05_02_14.csv> for transaction <31>
+2014-10-30 13:39:58,112 INFO  - Transaction <31> closed
+2014-10-30 13:39:58,183 INFO  - Opened transaction <34> for pipeline <WIPipeline>
+2014-10-30 13:39:58,183 INFO  - Input File name is <cdrFromMSC_2008_05_04_04.csv> for transaction <34>
+2014-10-30 13:39:58,230 INFO  - Transaction <34> closed
+2014-10-30 13:39:58,324 INFO  - Opened transaction <36> for pipeline <WIPipeline>
+2014-10-30 13:39:58,324 INFO  - Input File name is <cdrFromMSC_2008_04_22_15.csv> for transaction <36>
+2014-10-30 13:39:58,386 INFO  - Transaction <36> closed
+2014-10-30 13:39:58,460 INFO  - Opened transaction <38> for pipeline <WIPipeline>
+2014-10-30 13:39:58,460 INFO  - Input File name is <cdrFromMSC_2008_03_08_12.csv> for transaction <38>
+2014-10-30 13:39:58,583 INFO  - Transaction <38> closed
+2014-10-30 13:39:58,622 INFO  - Opened transaction <41> for pipeline <WIPipeline>
+2014-10-30 13:39:58,623 INFO  - Input File name is <cdrFromMSC_2008_04_03_22.csv> for transaction <41>
+2014-10-30 13:39:58,766 INFO  - Transaction <41> closed
+2014-10-30 13:39:58,817 INFO  - Opened transaction <44> for pipeline <WIPipeline>
+2014-10-30 13:39:58,817 INFO  - Input File name is <cdrFromMSC_2008_03_08_07.csv> for transaction <44>
+2014-10-30 13:39:58,927 INFO  - Transaction <44> closed
+2014-10-30 13:39:58,988 INFO  - Opened transaction <46> for pipeline <WIPipeline>
+2014-10-30 13:39:58,989 INFO  - Input File name is <cdrFromMSC_2008_04_17_19.csv> for transaction <46>
+2014-10-30 13:39:59,104 INFO  - Transaction <46> closed
+2014-10-30 13:39:59,156 INFO  - Opened transaction <49> for pipeline <WIPipeline>
+2014-10-30 13:39:59,156 INFO  - Input File name is <cdrFromMSC_2008_03_05_12.csv> for transaction <49>
+2014-10-30 13:39:59,297 INFO  - Transaction <49> closed
+2014-10-30 13:39:59,331 INFO  - Opened transaction <52> for pipeline <WIPipeline>
+2014-10-30 13:39:59,331 INFO  - Input File name is <cdrFromMSC_2008_03_01_00.csv> for transaction <52>
+2014-10-30 13:39:59,346 INFO  - Transaction <52> closed
+2014-10-30 13:39:59,444 INFO  - Opened transaction <54> for pipeline <WIPipeline>
+2014-10-30 13:39:59,444 INFO  - Input File name is <cdrFromMSC_2008_05_19_01.csv> for transaction <54>
+2014-10-30 13:39:59,460 INFO  - Transaction <54> closed
+2014-10-30 13:39:59,552 INFO  - Opened transaction <56> for pipeline <WIPipeline>
+2014-10-30 13:39:59,552 INFO  - Input File name is <cdrFromMSC_2008_05_17_07.csv> for transaction <56>
+2014-10-30 13:39:59,608 INFO  - Transaction <56> closed
+2014-10-30 13:39:59,675 INFO  - Opened transaction <58> for pipeline <WIPipeline>
+2014-10-30 13:39:59,675 INFO  - Input File name is <cdrFromMSC_2008_04_18_13.csv> for transaction <58>
+2014-10-30 13:39:59,761 INFO  - Transaction <58> closed
+2014-10-30 13:39:59,827 INFO  - Opened transaction <60> for pipeline <WIPipeline>
+2014-10-30 13:39:59,828 INFO  - Input File name is <cdrFromMSC_2008_04_17_10.csv> for transaction <60>
+2014-10-30 13:39:59,929 INFO  - Transaction <60> closed
+2014-10-30 13:39:59,975 INFO  - Opened transaction <63> for pipeline <WIPipeline>
+2014-10-30 13:39:59,975 INFO  - Input File name is <cdrFromMSC_2008_02_25_06.csv> for transaction <63>
+2014-10-30 13:40:00,106 INFO  - Transaction <63> closed
+2014-10-30 13:40:00,165 INFO  - Opened transaction <66> for pipeline <WIPipeline>
+2014-10-30 13:40:00,166 INFO  - Input File name is <cdrFromMSC_2008_03_12_20.csv> for transaction <66>
+2014-10-30 13:40:00,309 INFO  - Transaction <66> closed
+2014-10-30 13:40:00,333 INFO  - Opened transaction <68> for pipeline <WIPipeline>
+2014-10-30 13:40:00,333 INFO  - Input File name is <cdrFromMSC_2008_04_02_22.csv> for transaction <68>
+2014-10-30 13:40:00,386 INFO  - Transaction <68> closed
+2014-10-30 13:40:00,455 INFO  - Opened transaction <70> for pipeline <WIPipeline>
+2014-10-30 13:40:00,456 INFO  - Input File name is <cdrFromMSC_2008_03_17_19.csv> for transaction <70>
+2014-10-30 13:40:00,588 INFO  - Transaction <70> closed
+2014-10-30 13:40:00,622 INFO  - Opened transaction <73> for pipeline <WIPipeline>
+2014-10-30 13:40:00,622 INFO  - Input File name is <cdrFromMSC_2008_04_27_07.csv> for transaction <73>
+2014-10-30 13:40:00,709 INFO  - Transaction <73> closed
+2014-10-30 13:40:00,758 INFO  - Opened transaction <75> for pipeline <WIPipeline>
+2014-10-30 13:40:00,758 INFO  - Input File name is <cdrFromMSC_2008_04_21_18.csv> for transaction <75>
+2014-10-30 13:40:00,866 INFO  - Transaction <75> closed
+2014-10-30 13:40:00,921 INFO  - Opened transaction <78> for pipeline <WIPipeline>
+2014-10-30 13:40:00,922 INFO  - Input File name is <cdrFromMSC_2008_04_08_20.csv> for transaction <78>
+2014-10-30 13:40:01,039 INFO  - Transaction <78> closed
+2014-10-30 13:40:01,086 INFO  - Opened transaction <80> for pipeline <WIPipeline>
+2014-10-30 13:40:01,086 INFO  - Input File name is <cdrFromMSC_2008_05_11_08.csv> for transaction <80>
+2014-10-30 13:40:01,329 INFO  - Transaction <80> closed
+2014-10-30 13:40:01,341 INFO  - Opened transaction <84> for pipeline <WIPipeline>
+2014-10-30 13:40:01,341 INFO  - Input File name is <cdrFromMSC_2008_04_06_11.csv> for transaction <84>
+2014-10-30 13:40:01,486 INFO  - Transaction <84> closed
+2014-10-30 13:40:01,531 INFO  - Opened transaction <87> for pipeline <WIPipeline>
+2014-10-30 13:40:01,531 INFO  - Input File name is <cdrFromMSC_2008_05_12_10.csv> for transaction <87>
+2014-10-30 13:40:01,674 INFO  - Transaction <87> closed
+2014-10-30 13:40:01,738 INFO  - Opened transaction <90> for pipeline <WIPipeline>
+2014-10-30 13:40:01,738 INFO  - Input File name is <cdrFromMSC_2008_04_24_02.csv> for transaction <90>
+2014-10-30 13:40:01,777 INFO  - Transaction <90> closed
+2014-10-30 13:40:01,872 INFO  - Opened transaction <92> for pipeline <WIPipeline>
+2014-10-30 13:40:01,872 INFO  - Input File name is <cdrFromMSC_2008_02_22_17.csv> for transaction <92>
+2014-10-30 13:40:01,925 INFO  - Transaction <92> closed
+2014-10-30 13:40:01,998 INFO  - Opened transaction <94> for pipeline <WIPipeline>
+2014-10-30 13:40:01,999 INFO  - Input File name is <cdrFromMSC_2008_03_05_13.csv> for transaction <94>
+2014-10-30 13:40:02,064 INFO  - Transaction <94> closed
+2014-10-30 13:40:02,139 INFO  - Opened transaction <96> for pipeline <WIPipeline>
+2014-10-30 13:40:02,139 INFO  - Input File name is <cdrFromMSC_2008_03_27_18.csv> for transaction <96>
+2014-10-30 13:40:02,218 INFO  - Transaction <96> closed
+2014-10-30 13:40:02,285 INFO  - Opened transaction <99> for pipeline <WIPipeline>
+2014-10-30 13:40:02,285 INFO  - Input File name is <cdrFromMSC_2008_05_24_07.csv> for transaction <99>
+2014-10-30 13:40:02,376 INFO  - Transaction <99> closed
+2014-10-30 13:40:02,430 INFO  - Opened transaction <101> for pipeline <WIPipeline>
+2014-10-30 13:40:02,431 INFO  - Input File name is <cdrFromMSC_2008_03_18_14.csv> for transaction <101>
+2014-10-30 13:40:02,493 INFO  - Transaction <101> closed
+2014-10-30 13:40:02,567 INFO  - Opened transaction <103> for pipeline <WIPipeline>
+2014-10-30 13:40:02,567 INFO  - Input File name is <cdrFromMSC_2008_04_02_11.csv> for transaction <103>
+2014-10-30 13:40:02,644 INFO  - Transaction <103> closed
+2014-10-30 13:40:02,704 INFO  - Opened transaction <106> for pipeline <WIPipeline>
+2014-10-30 13:40:02,704 INFO  - Input File name is <cdrFromMSC_2008_03_29_15.csv> for transaction <106>
+2014-10-30 13:40:02,783 INFO  - Transaction <106> closed
+2014-10-30 13:40:02,827 INFO  - Opened transaction <108> for pipeline <WIPipeline>
+2014-10-30 13:40:02,827 INFO  - Input File name is <cdrFromMSC_2008_03_06_21.csv> for transaction <108>
+2014-10-30 13:40:02,978 INFO  - Transaction <108> closed
+2014-10-30 13:40:03,000 INFO  - Opened transaction <110> for pipeline <WIPipeline>
+2014-10-30 13:40:03,000 INFO  - Input File name is <cdrFromMSC_2008_04_21_03.csv> for transaction <110>
+2014-10-30 13:40:03,132 INFO  - Transaction <110> closed
+2014-10-30 13:40:03,226 INFO  - Opened transaction <113> for pipeline <WIPipeline>
+2014-10-30 13:40:03,226 INFO  - Input File name is <cdrFromMSC_2008_02_26_08.csv> for transaction <113>
+2014-10-30 13:40:03,278 INFO  - Transaction <113> closed
+2014-10-30 13:40:03,345 INFO  - Opened transaction <115> for pipeline <WIPipeline>
+2014-10-30 13:40:03,345 INFO  - Input File name is <cdrFromMSC_2008_05_16_23.csv> for transaction <115>
+2014-10-30 13:40:03,411 INFO  - Transaction <115> closed
+2014-10-30 13:40:03,486 INFO  - Opened transaction <117> for pipeline <WIPipeline>
+2014-10-30 13:40:03,486 INFO  - Input File name is <cdrFromMSC_2008_05_26_04.csv> for transaction <117>
+2014-10-30 13:40:03,518 INFO  - Transaction <117> closed
+2014-10-30 13:40:03,617 INFO  - Opened transaction <119> for pipeline <WIPipeline>
+2014-10-30 13:40:03,618 INFO  - Input File name is <cdrFromMSC_2008_03_09_18.csv> for transaction <119>
+2014-10-30 13:40:03,686 INFO  - Transaction <119> closed
+2014-10-30 13:40:03,755 INFO  - Opened transaction <121> for pipeline <WIPipeline>
+2014-10-30 13:40:03,755 INFO  - Input File name is <cdrFromMSC_2008_04_12_01.csv> for transaction <121>
+2014-10-30 13:40:03,797 INFO  - Transaction <121> closed
+2014-10-30 13:40:03,891 INFO  - Opened transaction <123> for pipeline <WIPipeline>
+2014-10-30 13:40:03,892 INFO  - Input File name is <cdrFromMSC_2008_02_23_06.csv> for transaction <123>
+2014-10-30 13:40:03,973 INFO  - Transaction <123> closed
+2014-10-30 13:40:04,031 INFO  - Opened transaction <124> for pipeline <WIPipeline>
+2014-10-30 13:40:04,032 INFO  - Input File name is <cdrFromMSC_2008_04_06_13.csv> for transaction <124>
+2014-10-30 13:40:04,104 INFO  - Transaction <124> closed
+2014-10-30 13:40:04,177 INFO  - Opened transaction <127> for pipeline <WIPipeline>
+2014-10-30 13:40:04,177 INFO  - Input File name is <cdrFromMSC_2008_05_25_11.csv> for transaction <127>
+2014-10-30 13:40:04,277 INFO  - Transaction <127> closed
+2014-10-30 13:40:04,338 INFO  - Opened transaction <128> for pipeline <WIPipeline>
+2014-10-30 13:40:04,338 INFO  - Input File name is <cdrFromMSC_2008_03_05_20.csv> for transaction <128>
+2014-10-30 13:40:04,441 INFO  - Transaction <128> closed
+2014-10-30 13:40:04,491 INFO  - Opened transaction <131> for pipeline <WIPipeline>
+2014-10-30 13:40:04,491 INFO  - Input File name is <cdrFromMSC_2008_05_06_09.csv> for transaction <131>
+2014-10-30 13:40:04,591 INFO  - Transaction <131> closed
+2014-10-30 13:40:04,639 INFO  - Opened transaction <132> for pipeline <WIPipeline>
+2014-10-30 13:40:04,639 INFO  - Input File name is <cdrFromMSC_2008_04_17_20.csv> for transaction <132>
+2014-10-30 13:40:04,752 INFO  - Transaction <132> closed
+2014-10-30 13:40:04,779 INFO  - Opened transaction <134> for pipeline <WIPipeline>
+2014-10-30 13:40:04,779 INFO  - Input File name is <cdrFromMSC_2008_05_14_15.csv> for transaction <134>
+2014-10-30 13:40:04,963 INFO  - Transaction <134> closed
+2014-10-30 13:40:05,039 INFO  - Opened transaction <137> for pipeline <WIPipeline>
+2014-10-30 13:40:05,039 INFO  - Input File name is <cdrFromMSC_2008_05_22_06.csv> for transaction <137>
+2014-10-30 13:40:05,139 INFO  - Transaction <137> closed
+2014-10-30 13:40:05,197 INFO  - Opened transaction <138> for pipeline <WIPipeline>
+2014-10-30 13:40:05,198 INFO  - Input File name is <cdrFromMSC_2008_04_28_01.csv> for transaction <138>
+2014-10-30 13:40:05,215 INFO  - Transaction <138> closed
+2014-10-30 13:40:05,312 INFO  - Opened transaction <140> for pipeline <WIPipeline>
+2014-10-30 13:40:05,312 INFO  - Input File name is <cdrFromMSC_2008_03_24_12.csv> for transaction <140>
+2014-10-30 13:40:05,365 INFO  - Transaction <140> closed
+2014-10-30 13:40:05,433 INFO  - Opened transaction <143> for pipeline <WIPipeline>
+2014-10-30 13:40:05,433 INFO  - Input File name is <cdrFromMSC_2008_05_19_16.csv> for transaction <143>
+2014-10-30 13:40:05,511 INFO  - Transaction <143> closed
+2014-10-30 13:40:05,572 INFO  - Opened transaction <145> for pipeline <WIPipeline>
+2014-10-30 13:40:05,572 INFO  - Input File name is <cdrFromMSC_2008_04_24_21.csv> for transaction <145>
+2014-10-30 13:40:05,782 INFO  - Transaction <145> closed
+2014-10-30 13:40:05,885 INFO  - Opened transaction <147> for pipeline <WIPipeline>
+2014-10-30 13:40:05,885 INFO  - Input File name is <cdrFromMSC_2008_02_10_16.csv> for transaction <147>
+2014-10-30 13:40:06,049 INFO  - Transaction <147> closed
+2014-10-30 13:40:06,087 INFO  - Opened transaction <148> for pipeline <WIPipeline>
+2014-10-30 13:40:06,088 INFO  - Input File name is <cdrFromMSC_2008_05_07_07.csv> for transaction <148>
+2014-10-30 13:40:06,276 INFO  - Transaction <148> closed
+2014-10-30 13:40:06,330 INFO  - Opened transaction <150> for pipeline <WIPipeline>
+2014-10-30 13:40:06,331 INFO  - Input File name is <cdrFromMSC_2008_03_17_23.csv> for transaction <150>
+2014-10-30 13:40:06,414 INFO  - Transaction <150> closed
+2014-10-30 13:40:06,485 INFO  - Opened transaction <153> for pipeline <WIPipeline>
+2014-10-30 13:40:06,486 INFO  - Input File name is <cdrFromMSC_2008_03_15_00.csv> for transaction <153>
+2014-10-30 13:40:06,583 INFO  - Transaction <153> closed
+2014-10-30 13:40:06,628 INFO  - Opened transaction <154> for pipeline <WIPipeline>
+2014-10-30 13:40:06,628 INFO  - Input File name is <cdrFromMSC_2008_05_05_02.csv> for transaction <154>
+2014-10-30 13:40:06,700 INFO  - Transaction <154> closed
+2014-10-30 13:40:06,763 INFO  - Opened transaction <156> for pipeline <WIPipeline>
+2014-10-30 13:40:06,763 INFO  - Input File name is <cdrFromMSC_2008_02_11_21.csv> for transaction <156>
+2014-10-30 13:40:07,028 INFO  - Transaction <156> closed
+2014-10-30 13:40:07,084 INFO  - Opened transaction <159> for pipeline <WIPipeline>
+2014-10-30 13:40:07,084 INFO  - Input File name is <cdrFromMSC_2008_04_22_12.csv> for transaction <159>
+2014-10-30 13:40:07,361 INFO  - Transaction <159> closed
+2014-10-30 13:40:07,403 INFO  - Opened transaction <161> for pipeline <WIPipeline>
+2014-10-30 13:40:07,404 INFO  - Input File name is <cdrFromMSC_2008_05_18_06.csv> for transaction <161>
+2014-10-30 13:40:07,540 INFO  - Transaction <161> closed
+2014-10-30 13:40:07,606 INFO  - Opened transaction <163> for pipeline <WIPipeline>
+2014-10-30 13:40:07,606 INFO  - Input File name is <cdrFromMSC_2008_05_22_13.csv> for transaction <163>
+2014-10-30 13:40:07,706 INFO  - Transaction <163> closed
+2014-10-30 13:40:07,772 INFO  - Opened transaction <164> for pipeline <WIPipeline>
+2014-10-30 13:40:07,773 INFO  - Input File name is <cdrFromMSC_2008_04_21_04.csv> for transaction <164>
+2014-10-30 13:40:07,814 INFO  - Transaction <164> closed
+2014-10-30 13:40:07,913 INFO  - Opened transaction <167> for pipeline <WIPipeline>
+2014-10-30 13:40:07,913 INFO  - Input File name is <cdrFromMSC_2008_05_04_05.csv> for transaction <167>
+2014-10-30 13:40:07,977 INFO  - Transaction <167> closed
+2014-10-30 13:40:08,055 INFO  - Opened transaction <169> for pipeline <WIPipeline>
+2014-10-30 13:40:08,056 INFO  - Input File name is <cdrFromMSC_2008_05_18_00.csv> for transaction <169>
+2014-10-30 13:40:08,098 INFO  - Transaction <169> closed
+2014-10-30 13:40:08,193 INFO  - Opened transaction <171> for pipeline <WIPipeline>
+2014-10-30 13:40:08,193 INFO  - Input File name is <cdrFromMSC_2008_05_03_12.csv> for transaction <171>
+2014-10-30 13:40:08,294 INFO  - Transaction <171> closed
+2014-10-30 13:40:08,343 INFO  - Opened transaction <173> for pipeline <WIPipeline>
+2014-10-30 13:40:08,344 INFO  - Input File name is <cdrFromMSC_2008_05_01_11.csv> for transaction <173>
+2014-10-30 13:40:08,494 INFO  - Transaction <173> closed
+2014-10-30 13:40:08,542 INFO  - Opened transaction <175> for pipeline <WIPipeline>
+2014-10-30 13:40:08,542 INFO  - Input File name is <cdrFromMSC_2008_02_21_22.csv> for transaction <175>
+2014-10-30 13:40:08,642 INFO  - Transaction <175> closed
+2014-10-30 13:40:08,692 INFO  - Opened transaction <177> for pipeline <WIPipeline>
+2014-10-30 13:40:08,692 INFO  - Input File name is <cdrFromMSC_2008_03_20_13.csv> for transaction <177>
+2014-10-30 13:40:08,928 INFO  - Transaction <177> closed
+2014-10-30 13:40:08,955 INFO  - Opened transaction <178> for pipeline <WIPipeline>
+2014-10-30 13:40:08,955 INFO  - Input File name is <cdrFromMSC_2008_02_26_06.csv> for transaction <178>
+2014-10-30 13:40:09,068 INFO  - Transaction <178> closed
+2014-10-30 13:40:09,119 INFO  - Opened transaction <180> for pipeline <WIPipeline>
+2014-10-30 13:40:09,120 INFO  - Input File name is <cdrFromMSC_2008_04_14_09.csv> for transaction <180>
+2014-10-30 13:40:09,197 INFO  - Transaction <180> closed
+2014-10-30 13:40:09,249 INFO  - Opened transaction <182> for pipeline <WIPipeline>
+2014-10-30 13:40:09,249 INFO  - Input File name is <cdrFromMSC_2008_05_03_09.csv> for transaction <182>
+2014-10-30 13:40:09,342 INFO  - Transaction <182> closed
+2014-10-30 13:40:09,401 INFO  - Opened transaction <185> for pipeline <WIPipeline>
+2014-10-30 13:40:09,401 INFO  - Input File name is <cdrFromMSC_2008_05_22_12.csv> for transaction <185>
+2014-10-30 13:40:09,575 INFO  - Transaction <185> closed
+2014-10-30 13:40:09,609 INFO  - Opened transaction <187> for pipeline <WIPipeline>
+2014-10-30 13:40:09,610 INFO  - Input File name is <cdrFromMSC_2008_02_13_22.csv> for transaction <187>
+2014-10-30 13:40:09,831 INFO  - Transaction <187> closed
+2014-10-30 13:40:09,833 INFO  - Opened transaction <188> for pipeline <WIPipeline>
+2014-10-30 13:40:09,833 INFO  - Input File name is <cdrFromMSC_2008_04_20_03.csv> for transaction <188>
+2014-10-30 13:40:10,096 INFO  - Transaction <188> closed
+2014-10-30 13:40:10,191 INFO  - Opened transaction <191> for pipeline <WIPipeline>
+2014-10-30 13:40:10,192 INFO  - Input File name is <cdrFromMSC_2008_05_26_19.csv> for transaction <191>
+2014-10-30 13:40:10,329 INFO  - Transaction <191> closed
+2014-10-30 13:40:10,350 INFO  - Opened transaction <192> for pipeline <WIPipeline>
+2014-10-30 13:40:10,350 INFO  - Input File name is <cdrFromMSC_2008_03_15_16.csv> for transaction <192>
+2014-10-30 13:40:10,447 INFO  - Transaction <192> closed
+2014-10-30 13:40:10,521 INFO  - Opened transaction <194> for pipeline <WIPipeline>
+2014-10-30 13:40:10,521 INFO  - Input File name is <cdrFromMSC_2008_04_08_00.csv> for transaction <194>
+2014-10-30 13:40:10,553 INFO  - Transaction <194> closed
+2014-10-30 13:40:10,647 INFO  - Opened transaction <197> for pipeline <WIPipeline>
+2014-10-30 13:40:10,648 INFO  - Input File name is <cdrFromMSC_2008_05_17_18.csv> for transaction <197>
+2014-10-30 13:40:10,709 INFO  - Transaction <197> closed
+2014-10-30 13:40:10,782 INFO  - Opened transaction <199> for pipeline <WIPipeline>
+2014-10-30 13:40:10,782 INFO  - Input File name is <cdrFromMSC_2008_05_19_08.csv> for transaction <199>
+2014-10-30 13:40:10,861 INFO  - Transaction <199> closed
+2014-10-30 13:40:10,935 INFO  - Opened transaction <200> for pipeline <WIPipeline>
+2014-10-30 13:40:10,936 INFO  - Input File name is <cdrFromMSC_2008_03_26_06.csv> for transaction <200>
+2014-10-30 13:40:11,041 INFO  - Transaction <200> closed
+2014-10-30 13:40:11,102 INFO  - Opened transaction <203> for pipeline <WIPipeline>
+2014-10-30 13:40:11,103 INFO  - Input File name is <cdrFromMSC_2008_04_05_01.csv> for transaction <203>
+2014-10-30 13:40:11,174 INFO  - Transaction <203> closed
+2014-10-30 13:40:11,268 INFO  - Opened transaction <205> for pipeline <WIPipeline>
+2014-10-30 13:40:11,268 INFO  - Input File name is <cdrFromMSC_2008_05_05_08.csv> for transaction <205>
+2014-10-30 13:40:11,309 INFO  - Transaction <205> closed
+2014-10-30 13:40:11,386 INFO  - Opened transaction <207> for pipeline <WIPipeline>
+2014-10-30 13:40:11,386 INFO  - Input File name is <cdrFromMSC_2008_02_25_07.csv> for transaction <207>
+2014-10-30 13:40:11,440 INFO  - Transaction <207> closed
+2014-10-30 13:40:11,519 INFO  - Opened transaction <209> for pipeline <WIPipeline>
+2014-10-30 13:40:11,519 INFO  - Input File name is <cdrFromMSC_2008_04_14_20.csv> for transaction <209>
+2014-10-30 13:40:11,661 INFO  - Transaction <209> closed
+2014-10-30 13:40:11,698 INFO  - Opened transaction <210> for pipeline <WIPipeline>
+2014-10-30 13:40:11,698 INFO  - Input File name is <cdrFromMSC_2008_05_19_07.csv> for transaction <210>
+2014-10-30 13:40:11,827 INFO  - Transaction <210> closed
+2014-10-30 13:40:11,911 INFO  - Opened transaction <213> for pipeline <WIPipeline>
+2014-10-30 13:40:11,911 INFO  - Input File name is <cdrFromMSC_2008_04_25_00.csv> for transaction <213>
+2014-10-30 13:40:11,967 INFO  - Transaction <213> closed
+2014-10-30 13:40:12,068 INFO  - Opened transaction <215> for pipeline <WIPipeline>
+2014-10-30 13:40:12,068 INFO  - Input File name is <cdrFromMSC_2008_02_13_05.csv> for transaction <215>
+2014-10-30 13:40:12,151 INFO  - Transaction <215> closed
+2014-10-30 13:40:12,216 INFO  - Opened transaction <217> for pipeline <WIPipeline>
+2014-10-30 13:40:12,216 INFO  - Input File name is <cdrFromMSC_2008_04_09_21.csv> for transaction <217>
+2014-10-30 13:40:12,367 INFO  - Transaction <217> closed
+2014-10-30 13:40:12,404 INFO  - Opened transaction <219> for pipeline <WIPipeline>
+2014-10-30 13:40:12,404 INFO  - Input File name is <cdrFromMSC_2008_04_10_19.csv> for transaction <219>
+2014-10-30 13:40:12,468 INFO  - Transaction <219> closed
+2014-10-30 13:40:12,533 INFO  - Opened transaction <221> for pipeline <WIPipeline>
+2014-10-30 13:40:12,533 INFO  - Input File name is <cdrFromMSC_2008_03_06_08.csv> for transaction <221>
+2014-10-30 13:40:12,600 INFO  - Transaction <221> closed
+2014-10-30 13:40:12,669 INFO  - Opened transaction <222> for pipeline <WIPipeline>
+2014-10-30 13:40:12,669 INFO  - Input File name is <cdrFromMSC_2008_02_27_02.csv> for transaction <222>
+2014-10-30 13:40:12,690 INFO  - Transaction <222> closed
+2014-10-30 13:40:12,790 INFO  - Opened transaction <224> for pipeline <WIPipeline>
+2014-10-30 13:40:12,791 INFO  - Input File name is <cdrFromMSC_2008_03_05_23.csv> for transaction <224>
+2014-10-30 13:40:12,828 INFO  - Transaction <224> closed
+2014-10-30 13:40:12,921 INFO  - Opened transaction <227> for pipeline <WIPipeline>
+2014-10-30 13:40:12,921 INFO  - Input File name is <cdrFromMSC_2008_05_14_22.csv> for transaction <227>
+2014-10-30 13:40:12,989 INFO  - Transaction <227> closed
+2014-10-30 13:40:13,055 INFO  - Opened transaction <229> for pipeline <WIPipeline>
+2014-10-30 13:40:13,055 INFO  - Input File name is <cdrFromMSC_2008_04_12_02.csv> for transaction <229>
+2014-10-30 13:40:13,089 INFO  - Transaction <229> closed
+2014-10-30 13:40:13,190 INFO  - Opened transaction <231> for pipeline <WIPipeline>
+2014-10-30 13:40:13,190 INFO  - Input File name is <cdrFromMSC_2008_02_27_10.csv> for transaction <231>
+2014-10-30 13:40:13,253 INFO  - Transaction <231> closed
+2014-10-30 13:40:13,328 INFO  - Opened transaction <232> for pipeline <WIPipeline>
+2014-10-30 13:40:13,328 INFO  - Input File name is <cdrFromMSC_2008_05_07_15.csv> for transaction <232>
+2014-10-30 13:40:13,408 INFO  - Transaction <232> closed
+2014-10-30 13:40:13,484 INFO  - Opened transaction <235> for pipeline <WIPipeline>
+2014-10-30 13:40:13,484 INFO  - Input File name is <cdrFromMSC_2008_04_14_13.csv> for transaction <235>
+2014-10-30 13:40:13,538 INFO  - Transaction <235> closed
+2014-10-30 13:40:13,614 INFO  - Opened transaction <237> for pipeline <WIPipeline>
+2014-10-30 13:40:13,614 INFO  - Input File name is <cdrFromMSC_2008_02_14_04.csv> for transaction <237>
+2014-10-30 13:40:13,648 INFO  - Transaction <237> closed
+2014-10-30 13:40:13,744 INFO  - Opened transaction <238> for pipeline <WIPipeline>
+2014-10-30 13:40:13,744 INFO  - Input File name is <cdrFromMSC_2008_05_20_13.csv> for transaction <238>
+2014-10-30 13:40:13,819 INFO  - Transaction <238> closed
+2014-10-30 13:40:13,883 INFO  - Opened transaction <241> for pipeline <WIPipeline>
+2014-10-30 13:40:13,884 INFO  - Input File name is <cdrFromMSC_2008_03_25_18.csv> for transaction <241>
+2014-10-30 13:40:13,944 INFO  - Transaction <241> closed
+2014-10-30 13:40:14,021 INFO  - Opened transaction <243> for pipeline <WIPipeline>
+2014-10-30 13:40:14,021 INFO  - Input File name is <cdrFromMSC_2008_03_29_03.csv> for transaction <243>
+2014-10-30 13:40:14,048 INFO  - Transaction <243> closed
+2014-10-30 13:40:14,144 INFO  - Opened transaction <245> for pipeline <WIPipeline>
+2014-10-30 13:40:14,144 INFO  - Input File name is <cdrFromMSC_2008_05_18_05.csv> for transaction <245>
+2014-10-30 13:40:14,175 INFO  - Transaction <245> closed
+2014-10-30 13:40:14,256 INFO  - Opened transaction <246> for pipeline <WIPipeline>
+2014-10-30 13:40:14,257 INFO  - Input File name is <cdrFromMSC_2008_03_27_14.csv> for transaction <246>
+2014-10-30 13:40:14,322 INFO  - Transaction <246> closed
+2014-10-30 13:40:14,392 INFO  - Opened transaction <249> for pipeline <WIPipeline>
+2014-10-30 13:40:14,392 INFO  - Input File name is <cdrFromMSC_2008_03_01_08.csv> for transaction <249>
+2014-10-30 13:40:14,438 INFO  - Transaction <249> closed
+2014-10-30 13:40:14,516 INFO  - Opened transaction <251> for pipeline <WIPipeline>
+2014-10-30 13:40:14,517 INFO  - Input File name is <cdrFromMSC_2008_04_22_04.csv> for transaction <251>
+2014-10-30 13:40:14,536 INFO  - Transaction <251> closed
+2014-10-30 13:40:14,626 INFO  - Opened transaction <253> for pipeline <WIPipeline>
+2014-10-30 13:40:14,626 INFO  - Input File name is <cdrFromMSC_2008_04_10_15.csv> for transaction <253>
+2014-10-30 13:40:14,729 INFO  - Transaction <253> closed
+2014-10-30 13:40:14,806 INFO  - Opened transaction <255> for pipeline <WIPipeline>
+2014-10-30 13:40:14,806 INFO  - Input File name is <cdrFromMSC_2008_02_20_13.csv> for transaction <255>
+2014-10-30 13:40:14,892 INFO  - Transaction <255> closed
+2014-10-30 13:40:14,970 INFO  - Opened transaction <256> for pipeline <WIPipeline>
+2014-10-30 13:40:14,970 INFO  - Input File name is <cdrFromMSC_2008_05_03_06.csv> for transaction <256>
+2014-10-30 13:40:15,052 INFO  - Transaction <256> closed
+2014-10-30 13:40:15,111 INFO  - Opened transaction <259> for pipeline <WIPipeline>
+2014-10-30 13:40:15,111 INFO  - Input File name is <cdrFromMSC_2008_04_16_18.csv> for transaction <259>
+2014-10-30 13:40:15,328 INFO  - Transaction <259> closed
+2014-10-30 13:40:15,385 INFO  - Opened transaction <260> for pipeline <WIPipeline>
+2014-10-30 13:40:15,385 INFO  - Input File name is <cdrFromMSC_2008_03_08_09.csv> for transaction <260>
+2014-10-30 13:40:15,508 INFO  - Transaction <260> closed
+2014-10-30 13:40:15,579 INFO  - Opened transaction <262> for pipeline <WIPipeline>
+2014-10-30 13:40:15,579 INFO  - Input File name is <cdrFromMSC_2008_02_15_07.csv> for transaction <262>
+2014-10-30 13:40:15,712 INFO  - Transaction <262> closed
+2014-10-30 13:40:15,782 INFO  - Opened transaction <264> for pipeline <WIPipeline>
+2014-10-30 13:40:15,782 INFO  - Input File name is <cdrFromMSC_2008_05_09_13.csv> for transaction <264>
+2014-10-30 13:40:15,851 INFO  - Transaction <264> closed
+2014-10-30 13:40:15,923 INFO  - Opened transaction <267> for pipeline <WIPipeline>
+2014-10-30 13:40:15,923 INFO  - Input File name is <cdrFromMSC_2008_04_07_10.csv> for transaction <267>
+2014-10-30 13:40:16,053 INFO  - Transaction <267> closed
+2014-10-30 13:40:16,110 INFO  - Opened transaction <268> for pipeline <WIPipeline>
+2014-10-30 13:40:16,110 INFO  - Input File name is <cdrFromMSC_2008_03_13_10.csv> for transaction <268>
+2014-10-30 13:40:16,166 INFO  - Transaction <268> closed
+2014-10-30 13:40:16,230 INFO  - Opened transaction <271> for pipeline <WIPipeline>
+2014-10-30 13:40:16,231 INFO  - Input File name is <cdrFromMSC_2008_03_27_21.csv> for transaction <271>
+2014-10-30 13:40:16,586 INFO  - Transaction <271> closed
+2014-10-30 13:40:16,674 INFO  - Opened transaction <273> for pipeline <WIPipeline>
+2014-10-30 13:40:16,674 INFO  - Input File name is <cdrFromMSC_2008_04_15_18.csv> for transaction <273>
+2014-10-30 13:40:16,873 INFO  - Transaction <273> closed
+2014-10-30 13:40:16,913 INFO  - Opened transaction <274> for pipeline <WIPipeline>
+2014-10-30 13:40:16,914 INFO  - Input File name is <cdrFromMSC_2008_04_29_11.csv> for transaction <274>
+2014-10-30 13:40:17,203 INFO  - Transaction <274> closed
+2014-10-30 13:40:17,272 INFO  - Opened transaction <277> for pipeline <WIPipeline>
+2014-10-30 13:40:17,272 INFO  - Input File name is <cdrFromMSC_2008_03_01_17.csv> for transaction <277>
+2014-10-30 13:40:17,310 INFO  - Transaction <277> closed
+2014-10-30 13:40:17,388 INFO  - Opened transaction <279> for pipeline <WIPipeline>
+2014-10-30 13:40:17,388 INFO  - Input File name is <cdrFromMSC_2008_04_09_07.csv> for transaction <279>
+2014-10-30 13:40:17,724 INFO  - Transaction <279> closed
+2014-10-30 13:40:17,799 INFO  - Opened transaction <281> for pipeline <WIPipeline>
+2014-10-30 13:40:17,799 INFO  - Input File name is <cdrFromMSC_2008_05_12_03.csv> for transaction <281>
+2014-10-30 13:40:17,845 INFO  - Transaction <281> closed
+2014-10-30 13:40:17,942 INFO  - Opened transaction <283> for pipeline <WIPipeline>
+2014-10-30 13:40:17,942 INFO  - Input File name is <cdrFromMSC_2008_03_21_21.csv> for transaction <283>
+2014-10-30 13:40:18,175 INFO  - Transaction <283> closed
+2014-10-30 13:40:18,224 INFO  - Opened transaction <285> for pipeline <WIPipeline>
+2014-10-30 13:40:18,225 INFO  - Input File name is <cdrFromMSC_2008_02_22_09.csv> for transaction <285>
+2014-10-30 13:40:18,839 INFO  - Transaction <285> closed
+2014-10-30 13:40:18,865 INFO  - Opened transaction <286> for pipeline <WIPipeline>
+2014-10-30 13:40:18,865 INFO  - Input File name is <cdrFromMSC_2008_04_06_05.csv> for transaction <286>
+2014-10-30 13:40:19,010 INFO  - Transaction <286> closed
+2014-10-30 13:40:19,098 INFO  - Opened transaction <289> for pipeline <WIPipeline>
+2014-10-30 13:40:19,098 INFO  - Input File name is <cdrFromMSC_2008_05_16_02.csv> for transaction <289>
+2014-10-30 13:40:19,148 INFO  - Transaction <289> closed
+2014-10-30 13:40:19,244 INFO  - Opened transaction <291> for pipeline <WIPipeline>
+2014-10-30 13:40:19,244 INFO  - Input File name is <cdrFromMSC_2008_03_22_04.csv> for transaction <291>
+2014-10-30 13:40:19,308 INFO  - Transaction <291> closed
+2014-10-30 13:40:19,401 INFO  - Opened transaction <293> for pipeline <WIPipeline>
+2014-10-30 13:40:19,401 INFO  - Input File name is <cdrFromMSC_2008_04_30_13.csv> for transaction <293>
+2014-10-30 13:40:19,515 INFO  - Transaction <293> closed
+2014-10-30 13:40:19,579 INFO  - Opened transaction <295> for pipeline <WIPipeline>
+2014-10-30 13:40:19,579 INFO  - Input File name is <cdrFromMSC_2008_02_18_21.csv> for transaction <295>
+2014-10-30 13:40:20,046 INFO  - Transaction <295> closed
+2014-10-30 13:40:20,083 INFO  - Opened transaction <297> for pipeline <WIPipeline>
+2014-10-30 13:40:20,083 INFO  - Input File name is <cdrFromMSC_2008_03_19_21.csv> for transaction <297>

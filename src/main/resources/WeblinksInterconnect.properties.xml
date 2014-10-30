@@ -1,0 +1,421 @@
+<?xml version="1.0"?>
+<config>
+  <Application>
+    WeblinksInterconnect
+  </Application>
+
+  <PipelineList>
+    <WIPipeline>
+      <Active>True</Active>
+    </WIPipeline>
+    
+    <AggLoaderPipeline>
+      <Active>True</Active>
+    </AggLoaderPipeline>
+  </PipelineList>
+
+  <WIPipeline>
+    <InputAdapter>
+      <WIInpAdapter>
+        <ClassName>WeblinksInterconnect.WIInputAdapter</ClassName>
+        <ModuleName>WIInpAdapter</ModuleName>
+        <BatchSize>5000</BatchSize>
+        <InputFilePath>Data/WeblinksInterconnect</InputFilePath>
+        <InputFilePrefix>cdr</InputFilePrefix>
+        <InputFileSuffix>.csv</InputFileSuffix>
+        <DoneFilePath>Data/WeblinksInterconnect/Done</DoneFilePath>
+        <DoneFilePrefix>cdr</DoneFilePrefix>
+        <DoneFileSuffix>.done</DoneFileSuffix>
+        <ErrFilePath>Data/WeblinksInterconnect/Err</ErrFilePath>
+        <ErrFilePrefix>cdr</ErrFilePrefix>
+        <ErrFileSuffix>.err-in</ErrFileSuffix>
+      </WIInpAdapter>
+    </InputAdapter>
+
+    <Process>
+      <!-- B Number normalisation -->
+      <NormLookup>
+        <ClassName>WeblinksInterconnect.Normalisation</ClassName>
+        <DataCache>NormCache</DataCache>
+        <BatchSize>5000</BatchSize>
+      </NormLookup>
+      
+      <!-- look up trunk information -->
+      <TrunkLookup>
+        <ClassName>WeblinksInterconnect.TrunkLookup</ClassName>
+        <DataCache>TrunkLookupCache</DataCache>
+        <BatchSize>5000</BatchSize>
+      </TrunkLookup>
+      
+      <!-- look up the operator of the trunk -->
+      <OperatorLookup>
+        <ClassName>WeblinksInterconnect.OperatorLookup</ClassName>
+        <DataCache>TrunkOperatorCache</DataCache>
+        <BatchSize>5000</BatchSize>
+      </OperatorLookup>
+      
+      <!-- look up the interconnection scenario -->
+      <TrunkICLookup>
+        <ClassName>WeblinksInterconnect.TrunkICLookup</ClassName>
+        <DataCache>TrunkICLookupCache</DataCache>
+        <BatchSize>5000</BatchSize>
+      </TrunkICLookup>
+      
+      <!-- manage old destination tables -->
+      <ZoneModelValidity>
+        <ClassName>WeblinksInterconnect.ZoneModelValidity</ClassName>
+        <DataCache>ZoneModelValdityCache</DataCache>
+        <BatchSize>5000</BatchSize>
+      </ZoneModelValidity>
+      
+      <!-- destination lookup -->
+      <ZoneLookupB>
+        <ClassName>WeblinksInterconnect.ZoneLookup</ClassName>
+        <DataCache>ZoneCacheB</DataCache>
+        <BatchSize>5000</BatchSize>
+      </ZoneLookupB>
+
+      <!-- perform rating -->
+      <RateLookup>
+        <ClassName>WeblinksInterconnect.RateLookup</ClassName>
+        <DataCache>RateCache</DataCache>
+        <BatchSize>5000</BatchSize>
+      </RateLookup>
+      
+      <!-- duplicate checking -->
+      <DupChk>
+        <ClassName>WeblinksInterconnect.DupCheck</ClassName>
+        <Active>true</Active>
+        <BatchSize>5000</BatchSize>
+        <DataCache>DupChkCache</DataCache>
+      </DupChk>
+      
+      <!-- filter which records go into the interconnect billing -->
+      <AggFilter>
+        <ClassName>WeblinksInterconnect.AggregationFilter</ClassName>
+        <DataCache>AggFilterCache</DataCache>
+        <BatchSize>5000</BatchSize>
+      </AggFilter>
+      
+      <!-- Aggregation for putting records into the interconnect_billing table -->
+      <Aggregation>
+        <ClassName>WeblinksInterconnect.Aggregation</ClassName>
+        <Active>true</Active>
+        <BatchSize>5000</BatchSize>
+        <AggCache>AggregationCache</AggCache>
+      </Aggregation>
+      
+      <!-- direct the record to the correct output(s) -->
+      <OutputSplitting>
+        <ClassName>WeblinksInterconnect.SplittingLookup</ClassName>
+        <Active>true</Active>
+        <BatchSize>5000</BatchSize>
+        <DataCache>SplittingCache</DataCache>
+      </OutputSplitting>
+      
+      <!-- diagnostic output -->
+      <DumpFirst>
+        <ClassName>OpenRate.process.Dump</ClassName>
+        <Active>True</Active>
+        <DumpFilePath>Data/WeblinksInterconnect/Dump</DumpFilePath>
+        <DumpFilePrefix>cdr</DumpFilePrefix>
+        <DumpFileSuffix>.dump</DumpFileSuffix>
+        <BatchSize>5000</BatchSize>
+      </DumpFirst>
+    </Process>
+    
+    <OutputAdapter>
+      <!-- output for traffic on the weblinks network -->
+      <WIWeblinksOutAdapter>
+        <ClassName>WeblinksInterconnect.WIOutputAdapter</ClassName>
+        <OutputName>Weblinks</OutputName>
+        <BatchSize>5000</BatchSize>
+        <MaxSleep>50</MaxSleep>
+        <DeleteEmptyOutputFile>True</DeleteEmptyOutputFile>
+        <DeleteEmptyErrorFile>True</DeleteEmptyErrorFile>
+        <OutputFilePath>Data/WeblinksInterconnect/WeblinksTraffic</OutputFilePath>
+        <OutputFilePrefix>cdr</OutputFilePrefix>
+        <OutputFileSuffix>.out</OutputFileSuffix>
+        <ErrFilePath>Data/WeblinksInterconnect/WeblinksTraffic</ErrFilePath>
+        <ErrFilePrefix>cdr</ErrFilePrefix>
+        <ErrFileSuffix>.err</ErrFileSuffix>
+      </WIWeblinksOutAdapter>
+      
+      <WIFilterOutAdapter>
+        <ClassName>WeblinksInterconnect.WIOutputAdapter</ClassName>
+        <OutputName>Filter</OutputName>
+        <BatchSize>5000</BatchSize>
+        <MaxSleep>50</MaxSleep>
+        <DeleteEmptyOutputFile>True</DeleteEmptyOutputFile>
+        <DeleteEmptyErrorFile>True</DeleteEmptyErrorFile>
+        <OutputFilePath>Data/WeblinksInterconnect/Filter</OutputFilePath>
+        <OutputFilePrefix>cdr</OutputFilePrefix>
+        <OutputFileSuffix>.out</OutputFileSuffix>
+        <ErrFilePath>Data/WeblinksInterconnect/Filter</ErrFilePath>
+        <ErrFilePrefix>cdr</ErrFilePrefix>
+        <ErrFileSuffix>.err</ErrFileSuffix>
+      </WIFilterOutAdapter>
+      
+      <WIInterconnectBillingOutAdapter>
+        <ClassName>WeblinksInterconnect.WIOutputAdapter</ClassName>
+        <OutputName>InterconnectBilling</OutputName>
+        <BatchSize>5000</BatchSize>
+        <MaxSleep>50</MaxSleep>
+        <DeleteEmptyOutputFile>True</DeleteEmptyOutputFile>
+        <DeleteEmptyErrorFile>True</DeleteEmptyErrorFile>
+        <OutputFilePath>Data/WeblinksInterconnect/InterconnectBilling</OutputFilePath>
+        <OutputFilePrefix>cdr</OutputFilePrefix>
+        <OutputFileSuffix>.out</OutputFileSuffix>
+        <ErrFilePath>Data/WeblinksInterconnect/InterconnectBilling</ErrFilePath>
+        <ErrFilePrefix>cdr</ErrFilePrefix>
+        <ErrFileSuffix>.err</ErrFileSuffix>
+      </WIInterconnectBillingOutAdapter>
+      
+      <WIInterconnectReconciliationOutAdapter>
+        <ClassName>WeblinksInterconnect.WIOutputAdapter</ClassName>
+        <OutputName>InterconnectReconciliation</OutputName>
+        <BatchSize>5000</BatchSize>
+        <MaxSleep>50</MaxSleep>
+        <DeleteEmptyOutputFile>True</DeleteEmptyOutputFile>
+        <DeleteEmptyErrorFile>True</DeleteEmptyErrorFile>
+        <OutputFilePath>Data/WeblinksInterconnect/InterconnectReconciliation</OutputFilePath>
+        <OutputFilePrefix>cdr</OutputFilePrefix>
+        <OutputFileSuffix>.out</OutputFileSuffix>
+        <ErrFilePath>Data/WeblinksInterconnect/InterconnectReconciliation</ErrFilePath>
+        <ErrFilePrefix>cdr</ErrFilePrefix>
+        <ErrFileSuffix>.err</ErrFileSuffix>
+      </WIInterconnectReconciliationOutAdapter>
+      
+      <WIErrorOutAdapter>
+        <ClassName>WeblinksInterconnect.WIOutputAdapter</ClassName>
+        <OutputName>Error</OutputName>
+        <BatchSize>5000</BatchSize>
+        <MaxSleep>50</MaxSleep>
+        <DeleteEmptyOutputFile>True</DeleteEmptyOutputFile>
+        <DeleteEmptyErrorFile>True</DeleteEmptyErrorFile>
+        <OutputFilePath>Data/WeblinksInterconnect/Error</OutputFilePath>
+        <OutputFilePrefix>cdr</OutputFilePrefix>
+        <OutputFileSuffix>.out</OutputFileSuffix>
+        <ErrFilePath>Data/WeblinksInterconnect/Error</ErrFilePath>
+        <ErrFilePrefix>cdr</ErrFilePrefix>
+        <ErrFileSuffix>.err</ErrFileSuffix>
+      </WIErrorOutAdapter>
+      
+      <WIDuplicateOutAdapter>
+        <ClassName>WeblinksInterconnect.WIOutputAdapter</ClassName>
+        <OutputName>Duplicate</OutputName>
+        <BatchSize>5000</BatchSize>
+        <MaxSleep>50</MaxSleep>
+        <DeleteEmptyOutputFile>True</DeleteEmptyOutputFile>
+        <DeleteEmptyErrorFile>True</DeleteEmptyErrorFile>
+        <OutputFilePath>Data/WeblinksInterconnect/Duplicate</OutputFilePath>
+        <OutputFilePrefix>cdr</OutputFilePrefix>
+        <OutputFileSuffix>.out</OutputFileSuffix>
+        <ErrFilePath>Data/WeblinksInterconnect/Duplicate</ErrFilePath>
+        <ErrFilePrefix>cdr</ErrFilePrefix>
+        <ErrFileSuffix>.err</ErrFileSuffix>
+      </WIDuplicateOutAdapter>
+    </OutputAdapter>
+  </WIPipeline>
+  
+  <AggLoaderPipeline>
+    <InputAdapter>
+      <ALInpAdapter>
+        <ClassName>WeblinksInterconnect.AggLoaderInputAdapter</ClassName>
+        <BatchSize>5000</BatchSize>
+        <InputFilePath>Data/WeblinksInterconnect/AggResults</InputFilePath>
+        <InputFilePrefix>Agg</InputFilePrefix>
+        <InputFileSuffix>.txt</InputFileSuffix>
+        <DoneFilePath>Data/WeblinksInterconnect/AggResults</DoneFilePath>
+        <DoneFilePrefix>Done</DoneFilePrefix>
+        <DoneFileSuffix>.done</DoneFileSuffix>
+        <ErrFilePath>Data/WeblinksInterconnect/AggResults</ErrFilePath>
+        <ErrFilePrefix>Err</ErrFilePrefix>
+        <ErrFileSuffix>.err</ErrFileSuffix>
+      </ALInpAdapter>
+    </InputAdapter>
+
+    <Process>
+    </Process>
+
+    <OutputAdapter>
+      <ALDBOutputAdapter>
+        <ClassName>WeblinksInterconnect.AggLoaderDBOutputAdapter</ClassName>
+        <OutputName>default</OutputName>
+        <BatchSize>5000</BatchSize>
+        <MaxSleep>50</MaxSleep>
+        <DataSource>TestDB</DataSource>
+        <ValidateStatement>select count(*) from ZONE_MODEL</ValidateStatement>
+        <InitStatement>select count(*) from ZONE_MODEL</InitStatement>
+        <RecordInsertStatement>CALL sp_UpdateAggResult(?,?,?,?,?,?)</RecordInsertStatement>
+        <CommitStatement>select count(*) from ZONE_MODEL</CommitStatement>
+        <RollbackStatement>select count(*) from ZONE_MODEL</RollbackStatement>
+      </ALDBOutputAdapter>
+    </OutputAdapter>
+  </AggLoaderPipeline>
+  
+  <Resource>
+    <LogFactory>
+      <ClassName>OpenRate.logging.LogFactory</ClassName>
+      <Properties>logWeblinksInterconnect.properties</Properties>
+      <DefaultCategory>WeblinksInterconnect</DefaultCategory>
+    </LogFactory>
+
+    <ECI>
+      <ClassName>OpenRate.configurationmanager.EventHandler</ClassName>
+      <Port>8086</Port>
+      <MaxConnection>2</MaxConnection>
+    </ECI>
+
+    <TransactionManagerFactory>
+      <ClassName>OpenRate.transaction.TransactionManagerFactory</ClassName>
+    </TransactionManagerFactory>
+
+    <DataSourceFactory>
+      <ClassName>OpenRate.resource.DataSourceFactory</ClassName>
+      <DataSourceBuilder>
+        <ClassName>OpenRate.db.C3P0DataSource</ClassName>
+      </DataSourceBuilder>
+      <DataSource>
+        <!-- This is the connection information for MySQL
+             To initialise the database for this connection, use the script
+             "WebLinksDB.MySQL.sql" in the /ConfigData/Orange directory.
+             You must also then start the MySQL database.
+        -->
+        <TestDB>
+          <db_url>jdbc:mysql://localhost/WeblinksInterconnectDB</db_url>
+          <driver>com.mysql.jdbc.Driver</driver>
+          <username>root</username>
+          <password>cpr</password>
+          <ValidationQuery>select 1 from dual</ValidationQuery>
+          <InitQuery>select 1 from dual</InitQuery>
+        </TestDB> 
+        
+        <!-- This is the connection information for HSQLDB
+             To initialise the database for this connection, use the script
+             "WebLinksDB.HSQLDB.sql" in the /ConfigData/TestDB directory.
+             You should change the location of the database to suit your setup.
+        <TestDB>
+          <db_url>jdbc:hsqldb:/home/ian/Repository/OpenRate/ConfigData/DBTest/testdb</db_url>
+          <driver>org.hsqldb.jdbcDriver</driver>
+          <username>sa</username>
+          <password></password>
+          <ValidationQuery>select 1 from dual</ValidationQuery>
+          <InitQuery>select 1 from dual</InitQuery>
+        </TestDB>
+        -->
+      </DataSource>
+    </DataSourceFactory>
+    
+    <CacheFactory>
+      <ClassName>OpenRate.resource.CacheFactory</ClassName>
+      <CacheableClass>
+        
+        <!-- B Number normalisation -->
+        <NormCache>
+          <ClassName>OpenRate.cache.RegexMatchCache</ClassName>
+          <DataSourceType>DB</DataSourceType>
+          <DataSource>TestDB</DataSource>
+          <SelectStatement>select MAP_GROUP,NUMBER_MATCH,REMOVE_PREFIX,NEW_PREFIX from NORMALISATION_MAP order by RANK</SelectStatement>
+          <KeyFields>1</KeyFields>
+        </NormCache>
+        
+        <!-- look up trunk information -->
+        <TrunkLookupCache>
+          <ClassName>OpenRate.cache.RegexMatchCache</ClassName>
+          <DataSourceType>DB</DataSourceType>
+          <DataSource>TestDB</DataSource>
+          <SelectStatement>select MAP_GROUP,TRUNK_ID,TRUNK_NAME from TRUNK_MAP order by RANK</SelectStatement>
+          <KeyFields>1</KeyFields>
+        </TrunkLookupCache>
+
+        <!-- look up the operator of the trunk -->
+        <TrunkOperatorCache>
+          <ClassName>OpenRate.cache.IndexedLookupCache</ClassName>
+          <DataSourceType>DB</DataSourceType>
+          <DataSource>TestDB</DataSource>
+          <SelectStatement>select TRUNK_NAME,TRUNK_OPERATOR from TRUNK_MAP</SelectStatement>
+          <ObjectFields>2</ObjectFields>
+          <IndexFields>1</IndexFields>
+          <IndexField>
+            <Index0>0</Index0>
+          </IndexField>
+        </TrunkOperatorCache>
+        
+        <!-- look up the interconnection scenario -->
+        <TrunkICLookupCache>
+          <ClassName>OpenRate.cache.RegexMatchCache</ClassName>
+          <DataSourceType>DB</DataSourceType>
+          <DataSource>TestDB</DataSource>
+          <SelectStatement>select MAP_GROUP,TRUNK_IN,TRUNK_OUT,RATING_SCENARIO from TRUNK_IC_MAP order by RANK</SelectStatement>
+          <KeyFields>2</KeyFields>
+        </TrunkICLookupCache>
+
+        <!-- manage old destination tables -->
+        <ZoneModelValdityCache>
+          <ClassName>OpenRate.cache.ValiditySegmentCache</ClassName>
+          <DataSourceType>DB</DataSourceType>
+          <DataSource>TestDB</DataSource>
+          <SelectStatement>select MAP_GROUP,ZONE_MODEL_IN,VALIDITY_FROM,VALIDITY_TO,NEW_ZONE_MODEL_OUT from ZONE_MODEL_VALIDITY</SelectStatement>
+          <DateFormat>Integer</DateFormat>
+        </ZoneModelValdityCache>
+
+        <!-- destination lookup -->
+        <ZoneCacheB>
+          <ClassName>OpenRate.cache.BestMatchCache</ClassName>
+          <DataSourceType>DB</DataSourceType>
+          <DataSource>TestDB</DataSource>
+          <SelectStatement>select MAP_GROUP,PREFIX_IN,RESULT_OUT,DESCRIPTION_OUT from ZONE_MODEL</SelectStatement>
+        </ZoneCacheB>
+
+        <!-- core rating tables -->
+        <RateCache>
+          <ClassName>OpenRate.cache.RUMRateCache</ClassName>
+          <DataSourceType>DB</DataSourceType>
+          <DataSource>TestDB</DataSource>
+          <PriceModelStatement>select PRICE_MODEL,STEP,TIER_FROM,TIER_TO,BEAT,FACTOR,CHARGE_BASE from PRICE_MODEL</PriceModelStatement>
+          <RUMMapStatement>select PRICE_MODEL, PRICE_MODEL, 'DUR', 'EUR', 'Tiered', '978', '0' from PRICE_MODEL</RUMMapStatement>
+        </RateCache>
+        
+        <!-- filter which records go into the interconnect billing -->
+        <AggFilterCache>
+          <ClassName>OpenRate.cache.RegexMatchCache</ClassName>
+          <DataSourceType>DB</DataSourceType>
+          <DataSource>TestDB</DataSource>
+          <SelectStatement>select MAP_GROUP,CALL_CASE,AGGREGATION_KEY from AGG_FILTER_MAP</SelectStatement>
+          <KeyFields>1</KeyFields>
+        </AggFilterCache>
+        
+        <!-- Aggregation for putting records into the interconnect_billing table -->
+        <AggregationCache>
+          <ClassName>OpenRate.cache.AggregationCache</ClassName>
+          <DataSourceType>File</DataSourceType>
+          <AggConfigFileName>ConfigData/WeblinksInterconnect/aggregations.dat</AggConfigFileName>
+          <AggResultPath>Data/WeblinksInterconnect/AggResults</AggResultPath>
+        </AggregationCache>
+
+        <!-- duplicate check storing -->
+        <DupChkCache>
+          <ClassName>OpenRate.cache.DuplicateCheckCache</ClassName>
+          <DataSourceType>DB</DataSourceType>
+          <DataSource>TestDB</DataSource>
+          <SelectStatement>select CDR_KEY,CDR_DATE from DUPLICATE_CHECK</SelectStatement>
+          <DataTable>DUPLICATE_CHECK</DataTable>
+          <InsertStatement>insert into DUPLICATE_CHECK (CDR_KEY,CDR_DATE) values (?,?)</InsertStatement>
+          <PurgeStatement>delete from DUPLICATE_CHECK where CDR_DATE &lt; ?</PurgeStatement>
+          <BufferLimit>1500</BufferLimit>
+          <StoreLimit>1500</StoreLimit>
+        </DupChkCache>
+        
+        <!-- table driven output guiding -->
+        <SplittingCache>
+          <ClassName>OpenRate.cache.RegexMatchCache</ClassName>
+          <DataSourceType>DB</DataSourceType>
+          <DataSource>TestDB</DataSource>
+          <SelectStatement>select MAP_GROUP,CALL_CASE,ZONE_MODEL,ERR_DESC,OUTPUT_LIST from SPLITTING_MAP order by RANK</SelectStatement>
+          <KeyFields>3</KeyFields>
+        </SplittingCache>        
+      </CacheableClass>
+    </CacheFactory>
+  </Resource>
+</config>

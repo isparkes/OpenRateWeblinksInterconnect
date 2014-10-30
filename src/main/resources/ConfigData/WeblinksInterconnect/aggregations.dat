@@ -1,0 +1,39 @@
+#Assume an input format:
+# TBD
+
+# Count records
+SCENARIO;IB-Count;Count records
+OPERATION;IB-Count;COUNT
+GROUPINGFIELDOFFSET;IB-Count;1
+GROUPINGFIELDOFFSET;IB-Count;2
+GROUPINGFIELDOFFSET;IB-Count;3
+INPFIELDOFFSET;IB-Count;4
+OUTPUTFILE;IB-Count;IB-Count.txt
+
+#Create the sum scenario - don't define an output because we are merging
+SCENARIO;IB-SumDuration;Sum Duration
+OPERATION;IB-SumDuration;SUM
+GROUPINGFIELDOFFSET;IB-SumDuration;1
+GROUPINGFIELDOFFSET;IB-SumDuration;2
+GROUPINGFIELDOFFSET;IB-SumDuration;3
+INPFIELDOFFSET;IB-SumDuration;4
+#OUTPUTFILE;IB-SumDuration;IB-Sum.txt
+
+#Create the sum scenario - don't define an output because we are merging
+SCENARIO;IB-SumCost;Sum Duration
+OPERATION;IB-SumCost;SUM
+GROUPINGFIELDOFFSET;IB-SumCost;1
+GROUPINGFIELDOFFSET;IB-SumCost;2
+GROUPINGFIELDOFFSET;IB-SumCost;3
+INPFIELDOFFSET;IB-SumCost;5
+#OUTPUTFILE;IB-SumCost;IB-Sum.txt
+
+# AggJB will trigger both the sum and the count
+KEY;IB-Count;InterconnectBilling
+KEY;IB-SumDuration;InterconnectBilling
+KEY;IB-SumCost;InterconnectBilling
+
+# Merge the output of the Sum into the Count
+MERGEOUTPUT;IB-Count;IB-Count;1
+MERGEOUTPUT;IB-SumDuration;IB-Count;2
+MERGEOUTPUT;IB-SumCost;IB-Count;3

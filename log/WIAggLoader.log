@@ -1,0 +1,446 @@
+2014-10-30 13:39:52,189 INFO  - Request Start for Transaction manager.
+2014-10-30 13:39:57,298 INFO  - Opened transaction <19> for pipeline <AggLoaderPipeline>
+2014-10-30 13:39:57,298 INFO  - Input File name is <AggFromMSC_2008_04_02_14_1414672795329.aggIB-Count.txt> for transaction <19>
+2014-10-30 13:39:57,334 INFO  - Parameter count for insert statement in module <ALDBOutputAdapter> is <6>
+2014-10-30 13:39:57,355 INFO  - Transaction <19> closed
+2014-10-30 13:39:57,406 INFO  - Opened transaction <21> for pipeline <AggLoaderPipeline>
+2014-10-30 13:39:57,406 INFO  - Input File name is <AggFromMSC_2008_04_04_15_1414672794880.aggIB-Count.txt> for transaction <21>
+2014-10-30 13:39:57,411 INFO  - Transaction <21> closed
+2014-10-30 13:39:57,512 INFO  - Opened transaction <23> for pipeline <AggLoaderPipeline>
+2014-10-30 13:39:57,512 INFO  - Input File name is <AggFromMSC_2008_05_09_23_1414672796770.aggIB-Count.txt> for transaction <23>
+2014-10-30 13:39:57,517 INFO  - Transaction <23> closed
+2014-10-30 13:39:57,620 INFO  - Opened transaction <24> for pipeline <AggLoaderPipeline>
+2014-10-30 13:39:57,621 INFO  - Input File name is <AggFromMSC_2008_03_05_14_1414672797150.aggIB-Count.txt> for transaction <24>
+2014-10-30 13:39:57,624 INFO  - Transaction <24> closed
+2014-10-30 13:39:57,724 INFO  - Opened transaction <26> for pipeline <AggLoaderPipeline>
+2014-10-30 13:39:57,724 INFO  - Input File name is <AggFromMSC_2008_05_27_09_1414672795662.aggIB-Count.txt> for transaction <26>
+2014-10-30 13:39:57,727 INFO  - Transaction <26> closed
+2014-10-30 13:39:57,859 INFO  - Opened transaction <28> for pipeline <AggLoaderPipeline>
+2014-10-30 13:39:57,860 INFO  - Input File name is <AggFromMSC_2008_05_26_06_1414672796607.aggIB-Count.txt> for transaction <28>
+2014-10-30 13:39:57,863 INFO  - Transaction <28> closed
+2014-10-30 13:39:57,965 INFO  - Opened transaction <30> for pipeline <AggLoaderPipeline>
+2014-10-30 13:39:57,965 INFO  - Input File name is <AggFromMSC_2008_03_06_01_1414672797387.aggIB-Count.txt> for transaction <30>
+2014-10-30 13:39:57,968 INFO  - Transaction <30> closed
+2014-10-30 13:39:58,069 INFO  - Opened transaction <32> for pipeline <AggLoaderPipeline>
+2014-10-30 13:39:58,069 INFO  - Input File name is <AggFromMSC_2008_04_25_01_1414672792407.aggIB-Count.txt> for transaction <32>
+2014-10-30 13:39:58,075 INFO  - Transaction <32> closed
+2014-10-30 13:39:58,176 INFO  - Opened transaction <33> for pipeline <AggLoaderPipeline>
+2014-10-30 13:39:58,177 INFO  - Input File name is <AggFromMSC_2008_05_02_14_1414672798108.aggIB-Count.txt> for transaction <33>
+2014-10-30 13:39:58,184 INFO  - Transaction <33> closed
+2014-10-30 13:39:58,280 INFO  - Opened transaction <35> for pipeline <AggLoaderPipeline>
+2014-10-30 13:39:58,280 INFO  - Input File name is <AggFromMSC_2008_03_21_18_1414672797572.aggIB-Count.txt> for transaction <35>
+2014-10-30 13:39:58,283 INFO  - Transaction <35> closed
+2014-10-30 13:39:58,383 INFO  - Opened transaction <37> for pipeline <AggLoaderPipeline>
+2014-10-30 13:39:58,384 INFO  - Input File name is <AggFromMSC_2008_05_01_09_1414672796422.aggIB-Count.txt> for transaction <37>
+2014-10-30 13:39:58,389 INFO  - Transaction <37> closed
+2014-10-30 13:39:58,487 INFO  - Opened transaction <39> for pipeline <AggLoaderPipeline>
+2014-10-30 13:39:58,487 INFO  - Input File name is <AggFromMSC_2008_02_13_08_1414672797724.aggIB-Count.txt> for transaction <39>
+2014-10-30 13:39:58,491 INFO  - Transaction <39> closed
+2014-10-30 13:39:58,590 INFO  - Opened transaction <40> for pipeline <AggLoaderPipeline>
+2014-10-30 13:39:58,590 INFO  - Input File name is <AggFromMSC_2008_05_19_03_1414672797255.aggIB-Count.txt> for transaction <40>
+2014-10-30 13:39:58,593 INFO  - Transaction <40> closed
+2014-10-30 13:39:58,693 INFO  - Opened transaction <42> for pipeline <AggLoaderPipeline>
+2014-10-30 13:39:58,693 INFO  - Input File name is <AggFromMSC_2008_04_02_21_1414672795984.aggIB-Count.txt> for transaction <42>
+2014-10-30 13:39:58,696 INFO  - Transaction <42> closed
+2014-10-30 13:39:58,799 INFO  - Opened transaction <43> for pipeline <AggLoaderPipeline>
+2014-10-30 13:39:58,799 INFO  - Input File name is <AggFromMSC_2008_03_07_09_1414672797878.aggIB-Count.txt> for transaction <43>
+2014-10-30 13:39:58,805 INFO  - Transaction <43> closed
+2014-10-30 13:39:58,907 INFO  - Opened transaction <45> for pipeline <AggLoaderPipeline>
+2014-10-30 13:39:58,907 INFO  - Input File name is <AggFromMSC_2008_04_22_15_1414672798385.aggIB-Count.txt> for transaction <45>
+2014-10-30 13:39:58,911 INFO  - Transaction <45> closed
+2014-10-30 13:39:59,011 INFO  - Opened transaction <47> for pipeline <AggLoaderPipeline>
+2014-10-30 13:39:59,011 INFO  - Input File name is <AggFromMSC_2008_03_08_07_1414672798924.aggIB-Count.txt> for transaction <47>
+2014-10-30 13:39:59,014 INFO  - Transaction <47> closed
+2014-10-30 13:39:59,116 INFO  - Opened transaction <48> for pipeline <AggLoaderPipeline>
+2014-10-30 13:39:59,117 INFO  - Input File name is <AggFromMSC_2008_04_17_19_1414672799102.aggIB-Count.txt> for transaction <48>
+2014-10-30 13:39:59,121 INFO  - Transaction <48> closed
+2014-10-30 13:39:59,219 INFO  - Opened transaction <50> for pipeline <AggLoaderPipeline>
+2014-10-30 13:39:59,220 INFO  - Input File name is <AggFromMSC_2008_02_23_20_1414672795217.aggIB-Count.txt> for transaction <50>
+2014-10-30 13:39:59,223 INFO  - Transaction <50> closed
+2014-10-30 13:39:59,323 INFO  - Opened transaction <51> for pipeline <AggLoaderPipeline>
+2014-10-30 13:39:59,323 INFO  - Input File name is <AggFromMSC_2008_03_05_12_1414672799295.aggIB-Count.txt> for transaction <51>
+2014-10-30 13:39:59,326 INFO  - Transaction <51> closed
+2014-10-30 13:39:59,430 INFO  - Opened transaction <53> for pipeline <AggLoaderPipeline>
+2014-10-30 13:39:59,431 INFO  - Input File name is <AggFromMSC_2008_03_01_00_1414672799345.aggIB-Count.txt> for transaction <53>
+2014-10-30 13:39:59,435 INFO  - Transaction <53> closed
+2014-10-30 13:39:59,538 INFO  - Opened transaction <55> for pipeline <AggLoaderPipeline>
+2014-10-30 13:39:59,538 INFO  - Input File name is <AggFromMSC_2008_05_19_01_1414672799459.aggIB-Count.txt> for transaction <55>
+2014-10-30 13:39:59,543 INFO  - Transaction <55> closed
+2014-10-30 13:39:59,644 INFO  - Opened transaction <57> for pipeline <AggLoaderPipeline>
+2014-10-30 13:39:59,645 INFO  - Input File name is <AggFromMSC_2008_03_24_19_1414672797056.aggIB-Count.txt> for transaction <57>
+2014-10-30 13:39:59,649 INFO  - Transaction <57> closed
+2014-10-30 13:39:59,749 INFO  - Opened transaction <59> for pipeline <AggLoaderPipeline>
+2014-10-30 13:39:59,749 INFO  - Input File name is <AggFromMSC_2008_03_08_12_1414672798581.aggIB-Count.txt> for transaction <59>
+2014-10-30 13:39:59,752 INFO  - Transaction <59> closed
+2014-10-30 13:39:59,851 INFO  - Opened transaction <61> for pipeline <AggLoaderPipeline>
+2014-10-30 13:39:59,852 INFO  - Input File name is <AggFromMSC_2008_05_20_09_1414672793937.aggIB-Count.txt> for transaction <61>
+2014-10-30 13:39:59,855 INFO  - Transaction <61> closed
+2014-10-30 13:39:59,956 INFO  - Opened transaction <62> for pipeline <AggLoaderPipeline>
+2014-10-30 13:39:59,957 INFO  - Input File name is <AggFromMSC_2008_04_17_10_1414672799928.aggIB-Count.txt> for transaction <62>
+2014-10-30 13:39:59,962 INFO  - Transaction <62> closed
+2014-10-30 13:40:00,060 INFO  - Opened transaction <64> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:00,060 INFO  - Input File name is <AggFromMSC_2008_05_16_13_1414672794704.aggIB-Count.txt> for transaction <64>
+2014-10-30 13:40:00,065 INFO  - Transaction <64> closed
+2014-10-30 13:40:00,165 INFO  - Opened transaction <65> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:00,165 INFO  - Input File name is <AggFromMSC_2008_02_25_06_1414672800105.aggIB-Count.txt> for transaction <65>
+2014-10-30 13:40:00,168 INFO  - Transaction <65> closed
+2014-10-30 13:40:00,267 INFO  - Opened transaction <67> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:00,267 INFO  - Input File name is <AggFromMSC_2008_02_14_23_1414672794369.aggIB-Count.txt> for transaction <67>
+2014-10-30 13:40:00,270 INFO  - Transaction <67> closed
+2014-10-30 13:40:00,372 INFO  - Opened transaction <69> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:00,373 INFO  - Input File name is <AggFromMSC_2008_03_12_20_1414672800308.aggIB-Count.txt> for transaction <69>
+2014-10-30 13:40:00,377 INFO  - Transaction <69> closed
+2014-10-30 13:40:00,476 INFO  - Opened transaction <71> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:00,477 INFO  - Input File name is <AggFromMSC_2008_04_02_22_1414672800385.aggIB-Count.txt> for transaction <71>
+2014-10-30 13:40:00,481 INFO  - Transaction <71> closed
+2014-10-30 13:40:00,582 INFO  - Opened transaction <72> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:00,582 INFO  - Input File name is <AggFromMSC_2008_05_17_07_1414672799606.aggIB-Count.txt> for transaction <72>
+2014-10-30 13:40:00,587 INFO  - Transaction <72> closed
+2014-10-30 13:40:00,687 INFO  - Opened transaction <74> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:00,687 INFO  - Input File name is <AggFromMSC_2008_03_17_19_1414672800587.aggIB-Count.txt> for transaction <74>
+2014-10-30 13:40:00,693 INFO  - Transaction <74> closed
+2014-10-30 13:40:00,792 INFO  - Opened transaction <76> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:00,793 INFO  - Input File name is <AggFromMSC_2008_04_27_07_1414672800707.aggIB-Count.txt> for transaction <76>
+2014-10-30 13:40:00,797 INFO  - Transaction <76> closed
+2014-10-30 13:40:00,898 INFO  - Opened transaction <77> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:00,898 INFO  - Input File name is <AggFromMSC_2008_04_21_18_1414672800864.aggIB-Count.txt> for transaction <77>
+2014-10-30 13:40:00,902 INFO  - Transaction <77> closed
+2014-10-30 13:40:01,002 INFO  - Opened transaction <79> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:01,002 INFO  - Input File name is <AggFromMSC_2008_04_03_22_1414672798764.aggIB-Count.txt> for transaction <79>
+2014-10-30 13:40:01,007 INFO  - Transaction <79> closed
+2014-10-30 13:40:01,108 INFO  - Opened transaction <81> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:01,109 INFO  - Input File name is <AggFromMSC_2008_04_08_20_1414672801038.aggIB-Count.txt> for transaction <81>
+2014-10-30 13:40:01,115 INFO  - Transaction <81> closed
+2014-10-30 13:40:01,211 INFO  - Opened transaction <82> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:01,212 INFO  - Input File name is <AggFromMSC_2008_02_28_10_1414672796219.aggIB-Count.txt> for transaction <82>
+2014-10-30 13:40:01,235 INFO  - Transaction <82> closed
+2014-10-30 13:40:01,315 INFO  - Opened transaction <83> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:01,315 INFO  - Input File name is <AggFromMSC_2008_04_18_13_1414672799759.aggIB-Count.txt> for transaction <83>
+2014-10-30 13:40:01,324 INFO  - Transaction <83> closed
+2014-10-30 13:40:01,418 INFO  - Opened transaction <85> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:01,418 INFO  - Input File name is <AggFromMSC_2008_05_11_08_1414672801328.aggIB-Count.txt> for transaction <85>
+2014-10-30 13:40:01,422 INFO  - Transaction <85> closed
+2014-10-30 13:40:01,522 INFO  - Opened transaction <86> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:01,522 INFO  - Input File name is <AggFromMSC_2008_04_06_11_1414672801485.aggIB-Count.txt> for transaction <86>
+2014-10-30 13:40:01,527 INFO  - Transaction <86> closed
+2014-10-30 13:40:01,625 INFO  - Opened transaction <88> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:01,625 INFO  - Input File name is <AggFromMSC_2008_05_09_03_1414672797944.aggIB-Count.txt> for transaction <88>
+2014-10-30 13:40:01,626 INFO  - Transaction <88> closed
+2014-10-30 13:40:01,731 INFO  - Opened transaction <89> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:01,731 INFO  - Input File name is <AggFromMSC_2008_05_12_10_1414672801673.aggIB-Count.txt> for transaction <89>
+2014-10-30 13:40:01,737 INFO  - Transaction <89> closed
+2014-10-30 13:40:01,837 INFO  - Opened transaction <91> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:01,837 INFO  - Input File name is <AggFromMSC_2008_04_24_02_1414672801776.aggIB-Count.txt> for transaction <91>
+2014-10-30 13:40:01,862 INFO  - Transaction <91> closed
+2014-10-30 13:40:01,966 INFO  - Opened transaction <93> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:01,966 INFO  - Input File name is <AggFromMSC_2008_02_22_17_1414672801924.aggIB-Count.txt> for transaction <93>
+2014-10-30 13:40:01,973 INFO  - Transaction <93> closed
+2014-10-30 13:40:02,072 INFO  - Opened transaction <95> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:02,072 INFO  - Input File name is <AggFromMSC_2008_04_06_21_1414672793456.aggIB-Count.txt> for transaction <95>
+2014-10-30 13:40:02,077 INFO  - Transaction <95> closed
+2014-10-30 13:40:02,175 INFO  - Opened transaction <97> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:02,175 INFO  - Input File name is <AggFromMSC_2008_04_16_00_1414672794096.aggIB-Count.txt> for transaction <97>
+2014-10-30 13:40:02,177 INFO  - Transaction <97> closed
+2014-10-30 13:40:02,280 INFO  - Opened transaction <98> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:02,280 INFO  - Input File name is <AggFromMSC_2008_03_27_18_1414672802216.aggIB-Count.txt> for transaction <98>
+2014-10-30 13:40:02,286 INFO  - Transaction <98> closed
+2014-10-30 13:40:02,385 INFO  - Opened transaction <100> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:02,385 INFO  - Input File name is <AggFromMSC_2008_05_24_07_1414672802374.aggIB-Count.txt> for transaction <100>
+2014-10-30 13:40:02,391 INFO  - Transaction <100> closed
+2014-10-30 13:40:02,488 INFO  - Opened transaction <102> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:02,488 INFO  - Input File name is <AggFromMSC_2008_05_04_04_1414672798227.aggIB-Count.txt> for transaction <102>
+2014-10-30 13:40:02,490 INFO  - Transaction <102> closed
+2014-10-30 13:40:02,591 INFO  - Opened transaction <104> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:02,591 INFO  - Input File name is <AggFromMSC_2008_03_18_14_1414672802492.aggIB-Count.txt> for transaction <104>
+2014-10-30 13:40:02,593 INFO  - Transaction <104> closed
+2014-10-30 13:40:02,696 INFO  - Opened transaction <105> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:02,696 INFO  - Input File name is <AggFromMSC_2008_04_02_11_1414672802642.aggIB-Count.txt> for transaction <105>
+2014-10-30 13:40:02,699 INFO  - Transaction <105> closed
+2014-10-30 13:40:02,801 INFO  - Opened transaction <107> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:02,801 INFO  - Input File name is <AggFromMSC_2008_03_29_15_1414672802782.aggIB-Count.txt> for transaction <107>
+2014-10-30 13:40:02,806 INFO  - Transaction <107> closed
+2014-10-30 13:40:02,907 INFO  - Opened transaction <109> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:02,907 INFO  - Input File name is <AggFromMSC_2008_03_05_13_1414672802063.aggIB-Count.txt> for transaction <109>
+2014-10-30 13:40:02,916 INFO  - Transaction <109> closed
+2014-10-30 13:40:03,012 INFO  - Opened transaction <111> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:03,012 INFO  - Input File name is <AggFromMSC_2008_03_06_21_1414672802975.aggIB-Count.txt> for transaction <111>
+2014-10-30 13:40:03,018 INFO  - Transaction <111> closed
+2014-10-30 13:40:03,222 INFO  - Opened transaction <112> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:03,222 INFO  - Input File name is <AggFromMSC_2008_04_21_03_1414672803131.aggIB-Count.txt> for transaction <112>
+2014-10-30 13:40:03,225 INFO  - Transaction <112> closed
+2014-10-30 13:40:03,328 INFO  - Opened transaction <114> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:03,328 INFO  - Input File name is <AggFromMSC_2008_02_26_08_1414672803277.aggIB-Count.txt> for transaction <114>
+2014-10-30 13:40:03,333 INFO  - Transaction <114> closed
+2014-10-30 13:40:03,434 INFO  - Opened transaction <116> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:03,434 INFO  - Input File name is <AggFromMSC_2008_05_16_23_1414672803409.aggIB-Count.txt> for transaction <116>
+2014-10-30 13:40:03,439 INFO  - Transaction <116> closed
+2014-10-30 13:40:03,539 INFO  - Opened transaction <118> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:03,540 INFO  - Input File name is <AggFromMSC_2008_05_26_04_1414672803518.aggIB-Count.txt> for transaction <118>
+2014-10-30 13:40:03,544 INFO  - Transaction <118> closed
+2014-10-30 13:40:03,747 INFO  - Opened transaction <120> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:03,748 INFO  - Input File name is <AggFromMSC_2008_03_09_18_1414672803685.aggIB-Count.txt> for transaction <120>
+2014-10-30 13:40:03,753 INFO  - Transaction <120> closed
+2014-10-30 13:40:03,853 INFO  - Opened transaction <122> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:03,853 INFO  - Input File name is <AggFromMSC_2008_04_12_01_1414672803796.aggIB-Count.txt> for transaction <122>
+2014-10-30 13:40:03,858 INFO  - Transaction <122> closed
+2014-10-30 13:40:04,059 INFO  - Opened transaction <125> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:04,059 INFO  - Input File name is <AggFromMSC_2008_02_23_06_1414672803971.aggIB-Count.txt> for transaction <125>
+2014-10-30 13:40:04,061 INFO  - Transaction <125> closed
+2014-10-30 13:40:04,164 INFO  - Opened transaction <126> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:04,164 INFO  - Input File name is <AggFromMSC_2008_04_06_13_1414672804102.aggIB-Count.txt> for transaction <126>
+2014-10-30 13:40:04,171 INFO  - Transaction <126> closed
+2014-10-30 13:40:04,371 INFO  - Opened transaction <129> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:04,371 INFO  - Input File name is <AggFromMSC_2008_05_25_11_1414672804275.aggIB-Count.txt> for transaction <129>
+2014-10-30 13:40:04,375 INFO  - Transaction <129> closed
+2014-10-30 13:40:04,477 INFO  - Opened transaction <130> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:04,477 INFO  - Input File name is <AggFromMSC_2008_03_05_20_1414672804438.aggIB-Count.txt> for transaction <130>
+2014-10-30 13:40:04,483 INFO  - Transaction <130> closed
+2014-10-30 13:40:04,684 INFO  - Opened transaction <133> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:04,685 INFO  - Input File name is <AggFromMSC_2008_05_06_09_1414672804588.aggIB-Count.txt> for transaction <133>
+2014-10-30 13:40:04,692 INFO  - Transaction <133> closed
+2014-10-30 13:40:04,792 INFO  - Opened transaction <135> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:04,792 INFO  - Input File name is <AggFromMSC_2008_04_17_20_1414672804751.aggIB-Count.txt> for transaction <135>
+2014-10-30 13:40:04,795 INFO  - Transaction <135> closed
+2014-10-30 13:40:05,000 INFO  - Opened transaction <136> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:05,000 INFO  - Input File name is <AggFromMSC_2008_05_14_15_1414672804961.aggIB-Count.txt> for transaction <136>
+2014-10-30 13:40:05,005 INFO  - Transaction <136> closed
+2014-10-30 13:40:05,206 INFO  - Opened transaction <139> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:05,207 INFO  - Input File name is <AggFromMSC_2008_05_22_06_1414672805138.aggIB-Count.txt> for transaction <139>
+2014-10-30 13:40:05,210 INFO  - Transaction <139> closed
+2014-10-30 13:40:05,313 INFO  - Opened transaction <141> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:05,314 INFO  - Input File name is <AggFromMSC_2008_04_28_01_1414672805214.aggIB-Count.txt> for transaction <141>
+2014-10-30 13:40:05,316 INFO  - Transaction <141> closed
+2014-10-30 13:40:05,420 INFO  - Opened transaction <142> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:05,420 INFO  - Input File name is <AggFromMSC_2008_03_24_12_1414672805365.aggIB-Count.txt> for transaction <142>
+2014-10-30 13:40:05,424 INFO  - Transaction <142> closed
+2014-10-30 13:40:05,524 INFO  - Opened transaction <144> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:05,524 INFO  - Input File name is <AggFromMSC_2008_05_19_16_1414672805510.aggIB-Count.txt> for transaction <144>
+2014-10-30 13:40:05,529 INFO  - Transaction <144> closed
+2014-10-30 13:40:05,832 INFO  - Opened transaction <146> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:05,832 INFO  - Input File name is <AggFromMSC_2008_04_24_21_1414672805781.aggIB-Count.txt> for transaction <146>
+2014-10-30 13:40:05,835 INFO  - Transaction <146> closed
+2014-10-30 13:40:06,142 INFO  - Opened transaction <149> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:06,142 INFO  - Input File name is <AggFromMSC_2008_02_10_16_1414672806047.aggIB-Count.txt> for transaction <149>
+2014-10-30 13:40:06,144 INFO  - Transaction <149> closed
+2014-10-30 13:40:06,352 INFO  - Opened transaction <151> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:06,352 INFO  - Input File name is <AggFromMSC_2008_05_07_07_1414672806273.aggIB-Count.txt> for transaction <151>
+2014-10-30 13:40:06,358 INFO  - Transaction <151> closed
+2014-10-30 13:40:06,459 INFO  - Opened transaction <152> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:06,460 INFO  - Input File name is <AggFromMSC_2008_03_17_23_1414672806413.aggIB-Count.txt> for transaction <152>
+2014-10-30 13:40:06,464 INFO  - Transaction <152> closed
+2014-10-30 13:40:06,666 INFO  - Opened transaction <155> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:06,667 INFO  - Input File name is <AggFromMSC_2008_03_15_00_1414672806581.aggIB-Count.txt> for transaction <155>
+2014-10-30 13:40:06,670 INFO  - Transaction <155> closed
+2014-10-30 13:40:06,770 INFO  - Opened transaction <157> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:06,770 INFO  - Input File name is <AggFromMSC_2008_05_05_02_1414672806699.aggIB-Count.txt> for transaction <157>
+2014-10-30 13:40:06,773 INFO  - Transaction <157> closed
+2014-10-30 13:40:07,080 INFO  - Opened transaction <158> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:07,080 INFO  - Input File name is <AggFromMSC_2008_02_11_21_1414672807027.aggIB-Count.txt> for transaction <158>
+2014-10-30 13:40:07,084 INFO  - Transaction <158> closed
+2014-10-30 13:40:07,390 INFO  - Opened transaction <160> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:07,391 INFO  - Input File name is <AggFromMSC_2008_04_22_12_1414672807358.aggIB-Count.txt> for transaction <160>
+2014-10-30 13:40:07,394 INFO  - Transaction <160> closed
+2014-10-30 13:40:07,597 INFO  - Opened transaction <162> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:07,597 INFO  - Input File name is <AggFromMSC_2008_05_18_06_1414672807540.aggIB-Count.txt> for transaction <162>
+2014-10-30 13:40:07,602 INFO  - Transaction <162> closed
+2014-10-30 13:40:07,805 INFO  - Opened transaction <165> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:07,805 INFO  - Input File name is <AggFromMSC_2008_05_22_13_1414672807704.aggIB-Count.txt> for transaction <165>
+2014-10-30 13:40:07,808 INFO  - Transaction <165> closed
+2014-10-30 13:40:07,912 INFO  - Opened transaction <166> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:07,912 INFO  - Input File name is <AggFromMSC_2008_04_21_04_1414672807813.aggIB-Count.txt> for transaction <166>
+2014-10-30 13:40:07,916 INFO  - Transaction <166> closed
+2014-10-30 13:40:08,018 INFO  - Opened transaction <168> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:08,019 INFO  - Input File name is <AggFromMSC_2008_05_04_05_1414672807975.aggIB-Count.txt> for transaction <168>
+2014-10-30 13:40:08,024 INFO  - Transaction <168> closed
+2014-10-30 13:40:08,124 INFO  - Opened transaction <170> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:08,125 INFO  - Input File name is <AggFromMSC_2008_05_18_00_1414672808096.aggIB-Count.txt> for transaction <170>
+2014-10-30 13:40:08,131 INFO  - Transaction <170> closed
+2014-10-30 13:40:08,332 INFO  - Opened transaction <172> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:08,333 INFO  - Input File name is <AggFromMSC_2008_05_03_12_1414672808292.aggIB-Count.txt> for transaction <172>
+2014-10-30 13:40:08,339 INFO  - Transaction <172> closed
+2014-10-30 13:40:08,540 INFO  - Opened transaction <174> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:08,540 INFO  - Input File name is <AggFromMSC_2008_05_01_11_1414672808492.aggIB-Count.txt> for transaction <174>
+2014-10-30 13:40:08,543 INFO  - Transaction <174> closed
+2014-10-30 13:40:08,644 INFO  - Opened transaction <176> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:08,645 INFO  - Input File name is <AggFromMSC_2008_02_21_22_1414672808641.aggIB-Count.txt> for transaction <176>
+2014-10-30 13:40:08,648 INFO  - Transaction <176> closed
+2014-10-30 13:40:08,958 INFO  - Opened transaction <179> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:08,959 INFO  - Input File name is <AggFromMSC_2008_03_20_13_1414672808926.aggIB-Count.txt> for transaction <179>
+2014-10-30 13:40:08,964 INFO  - Transaction <179> closed
+2014-10-30 13:40:09,174 INFO  - Opened transaction <181> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:09,174 INFO  - Input File name is <AggFromMSC_2008_02_26_06_1414672809067.aggIB-Count.txt> for transaction <181>
+2014-10-30 13:40:09,178 INFO  - Transaction <181> closed
+2014-10-30 13:40:09,277 INFO  - Opened transaction <183> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:09,278 INFO  - Input File name is <AggFromMSC_2008_04_14_09_1414672809196.aggIB-Count.txt> for transaction <183>
+2014-10-30 13:40:09,280 INFO  - Transaction <183> closed
+2014-10-30 13:40:09,383 INFO  - Opened transaction <184> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:09,383 INFO  - Input File name is <AggFromMSC_2008_05_03_09_1414672809341.aggIB-Count.txt> for transaction <184>
+2014-10-30 13:40:09,389 INFO  - Transaction <184> closed
+2014-10-30 13:40:09,593 INFO  - Opened transaction <186> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:09,593 INFO  - Input File name is <AggFromMSC_2008_05_22_12_1414672809574.aggIB-Count.txt> for transaction <186>
+2014-10-30 13:40:09,598 INFO  - Transaction <186> closed
+2014-10-30 13:40:09,904 INFO  - Opened transaction <189> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:09,904 INFO  - Input File name is <AggFromMSC_2008_02_13_22_1414672809830.aggIB-Count.txt> for transaction <189>
+2014-10-30 13:40:09,907 INFO  - Transaction <189> closed
+2014-10-30 13:40:10,111 INFO  - Opened transaction <190> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:10,111 INFO  - Input File name is <AggFromMSC_2008_04_20_03_1414672810095.aggIB-Count.txt> for transaction <190>
+2014-10-30 13:40:10,114 INFO  - Transaction <190> closed
+2014-10-30 13:40:10,420 INFO  - Opened transaction <193> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:10,420 INFO  - Input File name is <AggFromMSC_2008_05_26_19_1414672810329.aggIB-Count.txt> for transaction <193>
+2014-10-30 13:40:10,423 INFO  - Transaction <193> closed
+2014-10-30 13:40:10,524 INFO  - Opened transaction <195> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:10,525 INFO  - Input File name is <AggFromMSC_2008_03_15_16_1414672810446.aggIB-Count.txt> for transaction <195>
+2014-10-30 13:40:10,529 INFO  - Transaction <195> closed
+2014-10-30 13:40:10,628 INFO  - Opened transaction <196> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:10,628 INFO  - Input File name is <AggFromMSC_2008_04_08_00_1414672810552.aggIB-Count.txt> for transaction <196>
+2014-10-30 13:40:10,631 INFO  - Transaction <196> closed
+2014-10-30 13:40:10,731 INFO  - Opened transaction <198> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:10,731 INFO  - Input File name is <AggFromMSC_2008_05_17_18_1414672810709.aggIB-Count.txt> for transaction <198>
+2014-10-30 13:40:10,735 INFO  - Transaction <198> closed
+2014-10-30 13:40:10,937 INFO  - Opened transaction <201> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:10,937 INFO  - Input File name is <AggFromMSC_2008_05_19_08_1414672810860.aggIB-Count.txt> for transaction <201>
+2014-10-30 13:40:10,941 INFO  - Transaction <201> closed
+2014-10-30 13:40:11,040 INFO  - Opened transaction <202> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:11,041 INFO  - Input File name is <AggFromMSC_2008_03_26_06_1414672811040.aggIB-Count.txt> for transaction <202>
+2014-10-30 13:40:11,044 INFO  - Transaction <202> closed
+2014-10-30 13:40:11,246 INFO  - Opened transaction <204> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:11,246 INFO  - Input File name is <AggFromMSC_2008_04_05_01_1414672811173.aggIB-Count.txt> for transaction <204>
+2014-10-30 13:40:11,248 INFO  - Transaction <204> closed
+2014-10-30 13:40:11,348 INFO  - Opened transaction <206> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:11,348 INFO  - Input File name is <AggFromMSC_2008_05_05_08_1414672811309.aggIB-Count.txt> for transaction <206>
+2014-10-30 13:40:11,351 INFO  - Transaction <206> closed
+2014-10-30 13:40:11,451 INFO  - Opened transaction <208> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:11,451 INFO  - Input File name is <AggFromMSC_2008_02_25_07_1414672811439.aggIB-Count.txt> for transaction <208>
+2014-10-30 13:40:11,454 INFO  - Transaction <208> closed
+2014-10-30 13:40:11,760 INFO  - Opened transaction <211> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:11,760 INFO  - Input File name is <AggFromMSC_2008_04_14_20_1414672811660.aggIB-Count.txt> for transaction <211>
+2014-10-30 13:40:11,763 INFO  - Transaction <211> closed
+2014-10-30 13:40:11,866 INFO  - Opened transaction <212> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:11,866 INFO  - Input File name is <AggFromMSC_2008_05_19_07_1414672811826.aggIB-Count.txt> for transaction <212>
+2014-10-30 13:40:11,870 INFO  - Transaction <212> closed
+2014-10-30 13:40:11,970 INFO  - Opened transaction <214> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:11,970 INFO  - Input File name is <AggFromMSC_2008_04_25_00_1414672811967.aggIB-Count.txt> for transaction <214>
+2014-10-30 13:40:11,971 INFO  - Transaction <214> closed
+2014-10-30 13:40:12,178 INFO  - Opened transaction <216> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:12,178 INFO  - Input File name is <AggFromMSC_2008_02_13_05_1414672812150.aggIB-Count.txt> for transaction <216>
+2014-10-30 13:40:12,181 INFO  - Transaction <216> closed
+2014-10-30 13:40:12,388 INFO  - Opened transaction <218> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:12,388 INFO  - Input File name is <AggFromMSC_2008_04_09_21_1414672812366.aggIB-Count.txt> for transaction <218>
+2014-10-30 13:40:12,394 INFO  - Transaction <218> closed
+2014-10-30 13:40:12,493 INFO  - Opened transaction <220> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:12,493 INFO  - Input File name is <AggFromMSC_2008_04_10_19_1414672812466.aggIB-Count.txt> for transaction <220>
+2014-10-30 13:40:12,498 INFO  - Transaction <220> closed
+2014-10-30 13:40:12,700 INFO  - Opened transaction <223> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:12,701 INFO  - Input File name is <AggFromMSC_2008_02_27_02_1414672812689.aggIB-Count.txt> for transaction <223>
+2014-10-30 13:40:12,706 INFO  - Transaction <223> closed
+2014-10-30 13:40:12,809 INFO  - Opened transaction <225> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:12,809 INFO  - Input File name is <AggFromMSC_2008_03_06_08_1414672812599.aggIB-Count.txt> for transaction <225>
+2014-10-30 13:40:12,812 INFO  - Transaction <225> closed
+2014-10-30 13:40:12,914 INFO  - Opened transaction <226> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:12,914 INFO  - Input File name is <AggFromMSC_2008_03_05_23_1414672812827.aggIB-Count.txt> for transaction <226>
+2014-10-30 13:40:12,920 INFO  - Transaction <226> closed
+2014-10-30 13:40:13,018 INFO  - Opened transaction <228> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:13,018 INFO  - Input File name is <AggFromMSC_2008_05_14_22_1414672812989.aggIB-Count.txt> for transaction <228>
+2014-10-30 13:40:13,021 INFO  - Transaction <228> closed
+2014-10-30 13:40:13,123 INFO  - Opened transaction <230> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:13,123 INFO  - Input File name is <AggFromMSC_2008_04_12_02_1414672813088.aggIB-Count.txt> for transaction <230>
+2014-10-30 13:40:13,127 INFO  - Transaction <230> closed
+2014-10-30 13:40:13,330 INFO  - Opened transaction <233> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:13,330 INFO  - Input File name is <AggFromMSC_2008_02_27_10_1414672813251.aggIB-Count.txt> for transaction <233>
+2014-10-30 13:40:13,333 INFO  - Transaction <233> closed
+2014-10-30 13:40:13,435 INFO  - Opened transaction <234> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:13,435 INFO  - Input File name is <AggFromMSC_2008_05_07_15_1414672813406.aggIB-Count.txt> for transaction <234>
+2014-10-30 13:40:13,441 INFO  - Transaction <234> closed
+2014-10-30 13:40:13,539 INFO  - Opened transaction <236> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:13,540 INFO  - Input File name is <AggFromMSC_2008_04_14_13_1414672813537.aggIB-Count.txt> for transaction <236>
+2014-10-30 13:40:13,544 INFO  - Transaction <236> closed
+2014-10-30 13:40:13,751 INFO  - Opened transaction <239> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:13,752 INFO  - Input File name is <AggFromMSC_2008_02_14_04_1414672813647.aggIB-Count.txt> for transaction <239>
+2014-10-30 13:40:13,756 INFO  - Transaction <239> closed
+2014-10-30 13:40:13,854 INFO  - Opened transaction <240> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:13,855 INFO  - Input File name is <AggFromMSC_2008_05_20_13_1414672813819.aggIB-Count.txt> for transaction <240>
+2014-10-30 13:40:13,857 INFO  - Transaction <240> closed
+2014-10-30 13:40:13,957 INFO  - Opened transaction <242> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:13,957 INFO  - Input File name is <AggFromMSC_2008_03_25_18_1414672813943.aggIB-Count.txt> for transaction <242>
+2014-10-30 13:40:13,959 INFO  - Transaction <242> closed
+2014-10-30 13:40:14,059 INFO  - Opened transaction <244> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:14,060 INFO  - Input File name is <AggFromMSC_2008_03_29_03_1414672814048.aggIB-Count.txt> for transaction <244>
+2014-10-30 13:40:14,063 INFO  - Transaction <244> closed
+2014-10-30 13:40:14,267 INFO  - Opened transaction <247> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:14,267 INFO  - Input File name is <AggFromMSC_2008_05_18_05_1414672814174.aggIB-Count.txt> for transaction <247>
+2014-10-30 13:40:14,270 INFO  - Transaction <247> closed
+2014-10-30 13:40:14,370 INFO  - Opened transaction <248> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:14,370 INFO  - Input File name is <AggFromMSC_2008_03_27_14_1414672814321.aggIB-Count.txt> for transaction <248>
+2014-10-30 13:40:14,373 INFO  - Transaction <248> closed
+2014-10-30 13:40:14,474 INFO  - Opened transaction <250> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:14,474 INFO  - Input File name is <AggFromMSC_2008_03_01_08_1414672814437.aggIB-Count.txt> for transaction <250>
+2014-10-30 13:40:14,476 INFO  - Transaction <250> closed
+2014-10-30 13:40:14,576 INFO  - Opened transaction <252> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:14,577 INFO  - Input File name is <AggFromMSC_2008_04_22_04_1414672814535.aggIB-Count.txt> for transaction <252>
+2014-10-30 13:40:14,579 INFO  - Transaction <252> closed
+2014-10-30 13:40:14,781 INFO  - Opened transaction <254> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:14,781 INFO  - Input File name is <AggFromMSC_2008_04_10_15_1414672814728.aggIB-Count.txt> for transaction <254>
+2014-10-30 13:40:14,786 INFO  - Transaction <254> closed
+2014-10-30 13:40:14,986 INFO  - Opened transaction <257> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:14,987 INFO  - Input File name is <AggFromMSC_2008_02_20_13_1414672814891.aggIB-Count.txt> for transaction <257>
+2014-10-30 13:40:14,991 INFO  - Transaction <257> closed
+2014-10-30 13:40:15,089 INFO  - Opened transaction <258> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:15,089 INFO  - Input File name is <AggFromMSC_2008_05_03_06_1414672815051.aggIB-Count.txt> for transaction <258>
+2014-10-30 13:40:15,093 INFO  - Transaction <258> closed
+2014-10-30 13:40:15,396 INFO  - Opened transaction <261> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:15,396 INFO  - Input File name is <AggFromMSC_2008_04_16_18_1414672815327.aggIB-Count.txt> for transaction <261>
+2014-10-30 13:40:15,400 INFO  - Transaction <261> closed
+2014-10-30 13:40:15,602 INFO  - Opened transaction <263> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:15,602 INFO  - Input File name is <AggFromMSC_2008_03_08_09_1414672815507.aggIB-Count.txt> for transaction <263>
+2014-10-30 13:40:15,605 INFO  - Transaction <263> closed
+2014-10-30 13:40:15,807 INFO  - Opened transaction <265> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:15,807 INFO  - Input File name is <AggFromMSC_2008_02_15_07_1414672815712.aggIB-Count.txt> for transaction <265>
+2014-10-30 13:40:15,810 INFO  - Transaction <265> closed
+2014-10-30 13:40:15,912 INFO  - Opened transaction <266> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:15,913 INFO  - Input File name is <AggFromMSC_2008_05_09_13_1414672815850.aggIB-Count.txt> for transaction <266>
+2014-10-30 13:40:15,917 INFO  - Transaction <266> closed
+2014-10-30 13:40:16,120 INFO  - Opened transaction <269> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:16,120 INFO  - Input File name is <AggFromMSC_2008_04_07_10_1414672816052.aggIB-Count.txt> for transaction <269>
+2014-10-30 13:40:16,123 INFO  - Transaction <269> closed
+2014-10-30 13:40:16,223 INFO  - Opened transaction <270> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:16,223 INFO  - Input File name is <AggFromMSC_2008_03_13_10_1414672816165.aggIB-Count.txt> for transaction <270>
+2014-10-30 13:40:16,226 INFO  - Transaction <270> closed
+2014-10-30 13:40:16,635 INFO  - Opened transaction <272> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:16,635 INFO  - Input File name is <AggFromMSC_2008_03_27_21_1414672816586.aggIB-Count.txt> for transaction <272>
+2014-10-30 13:40:16,639 INFO  - Transaction <272> closed
+2014-10-30 13:40:16,944 INFO  - Opened transaction <275> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:16,944 INFO  - Input File name is <AggFromMSC_2008_04_15_18_1414672816872.aggIB-Count.txt> for transaction <275>
+2014-10-30 13:40:17,150 INFO  - Transaction <275> closed
+2014-10-30 13:40:17,251 INFO  - Opened transaction <276> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:17,251 INFO  - Input File name is <AggFromMSC_2008_04_29_11_1414672817202.aggIB-Count.txt> for transaction <276>
+2014-10-30 13:40:17,253 INFO  - Transaction <276> closed
+2014-10-30 13:40:17,355 INFO  - Opened transaction <278> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:17,355 INFO  - Input File name is <AggFromMSC_2008_03_01_17_1414672817309.aggIB-Count.txt> for transaction <278>
+2014-10-30 13:40:17,359 INFO  - Transaction <278> closed
+2014-10-30 13:40:17,767 INFO  - Opened transaction <280> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:17,768 INFO  - Input File name is <AggFromMSC_2008_04_09_07_1414672817723.aggIB-Count.txt> for transaction <280>
+2014-10-30 13:40:17,772 INFO  - Transaction <280> closed
+2014-10-30 13:40:17,873 INFO  - Opened transaction <282> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:17,873 INFO  - Input File name is <AggFromMSC_2008_05_12_03_1414672817844.aggIB-Count.txt> for transaction <282>
+2014-10-30 13:40:17,877 INFO  - Transaction <282> closed
+2014-10-30 13:40:18,183 INFO  - Opened transaction <284> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:18,183 INFO  - Input File name is <AggFromMSC_2008_03_21_21_1414672818174.aggIB-Count.txt> for transaction <284>
+2014-10-30 13:40:18,186 INFO  - Transaction <284> closed
+2014-10-30 13:40:18,917 INFO  - Opened transaction <287> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:18,917 INFO  - Input File name is <AggFromMSC_2008_02_22_09_1414672818839.aggIB-Count.txt> for transaction <287>
+2014-10-30 13:40:18,919 INFO  - Transaction <287> closed
+2014-10-30 13:40:19,021 INFO  - Opened transaction <288> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:19,022 INFO  - Input File name is <AggFromMSC_2008_04_06_05_1414672819009.aggIB-Count.txt> for transaction <288>
+2014-10-30 13:40:19,024 INFO  - Transaction <288> closed
+2014-10-30 13:40:19,229 INFO  - Opened transaction <290> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:19,229 INFO  - Input File name is <AggFromMSC_2008_05_16_02_1414672819147.aggIB-Count.txt> for transaction <290>
+2014-10-30 13:40:19,233 INFO  - Transaction <290> closed
+2014-10-30 13:40:19,332 INFO  - Opened transaction <292> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:19,332 INFO  - Input File name is <AggFromMSC_2008_03_22_04_1414672819307.aggIB-Count.txt> for transaction <292>
+2014-10-30 13:40:19,334 INFO  - Transaction <292> closed
+2014-10-30 13:40:19,539 INFO  - Opened transaction <294> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:19,539 INFO  - Input File name is <AggFromMSC_2008_04_30_13_1414672819514.aggIB-Count.txt> for transaction <294>
+2014-10-30 13:40:19,543 INFO  - Transaction <294> closed
+2014-10-30 13:40:20,052 INFO  - Opened transaction <296> for pipeline <AggLoaderPipeline>
+2014-10-30 13:40:20,052 INFO  - Input File name is <AggFromMSC_2008_02_18_21_1414672820045.aggIB-Count.txt> for transaction <296>
+2014-10-30 13:40:20,055 INFO  - Transaction <296> closed
