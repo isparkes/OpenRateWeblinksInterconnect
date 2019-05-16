@@ -106,11 +106,11 @@ public class WIOutputAdapter
    * @return The processed record
    */
   @Override
-  public Collection<IRecord> procValidRecord(IRecord r) {
+  public Collection<FlatRecord> procValidRecord(IRecord r) {
     FlatRecord tmpOutRecord;
     WIRecord tmpInRecord;
 
-    Collection<IRecord> Outbatch;
+    Collection<FlatRecord> Outbatch;
     Outbatch = new ArrayList<>();
 
     tmpOutRecord = new FlatRecord();
@@ -134,11 +134,11 @@ public class WIOutputAdapter
    * @return The processed record
    */
   @Override
-  public Collection<IRecord> procErrorRecord(IRecord r) {
+  public Collection<FlatRecord> procErrorRecord(IRecord r) {
     FlatRecord tmpOutRecord;
     WIRecord tmpInRecord;
 
-    Collection<IRecord> Outbatch;
+    Collection<FlatRecord> Outbatch;
     Outbatch = new ArrayList<>();
 
     tmpOutRecord = new FlatRecord();

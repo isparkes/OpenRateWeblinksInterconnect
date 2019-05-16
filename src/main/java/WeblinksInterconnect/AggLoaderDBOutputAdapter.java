@@ -64,9 +64,9 @@ import java.util.Collection;
 public class AggLoaderDBOutputAdapter extends JDBCOutputAdapter {
 
   @Override
-  public Collection<IRecord> procValidRecord(IRecord r) {
+  public Collection<DBRecord> procValidRecord(IRecord r) {
     FlatRecord tmpInRecord;
-    Collection<IRecord> Outbatch = new ArrayList<>();
+    Collection<DBRecord> Outbatch = new ArrayList<>();
 
     // Get the data from the input record
     tmpInRecord = (FlatRecord) r;
@@ -94,7 +94,7 @@ public class AggLoaderDBOutputAdapter extends JDBCOutputAdapter {
   }
 
   @Override
-  public Collection<IRecord> procErrorRecord(IRecord r) {
+  public Collection<DBRecord> procErrorRecord(IRecord r) {
     // Do nothing
     return null;
   }

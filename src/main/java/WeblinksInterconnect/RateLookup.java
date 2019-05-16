@@ -87,7 +87,7 @@ public class RateLookup extends AbstractRUMRateCalc {
 
     if (CurrentRecord.RECORD_TYPE == WIRecord.WI_RECORD_TYPE) {
       try {
-        PerformRating(CurrentRecord);
+        performRating(CurrentRecord);
       } catch (ProcessingException pe) {
         tmpError = new RecordError("ERR_RATE_LOOKUP", ErrorType.SPECIAL);
         CurrentRecord.addError(tmpError);

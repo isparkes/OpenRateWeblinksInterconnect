@@ -56,8 +56,10 @@ package WeblinksInterconnect;
 
 import OpenRate.adapter.file.FlatFileInputAdapter;
 import OpenRate.exception.InitializationException;
+import OpenRate.exception.ProcessingException;
 import OpenRate.record.*;
 import OpenRate.utils.PropertyUtils;
+import WeblinksInterconnect.WIRecord;
 
 /**
  * This class is an example of how one would write an InputAdapter. An input
@@ -117,7 +119,7 @@ public class WIInputAdapter extends FlatFileInputAdapter {
    *
    * @return
    */
-  @Override
+  // REMOVED --> @Override
   public IRecord procHeader(IRecord r) {
     // reset the record numbering
     StreamRecordNumber = 0;
@@ -139,7 +141,7 @@ public class WIInputAdapter extends FlatFileInputAdapter {
    *
    * @return
    */
-  @Override
+  // REMOVED --> @Override
   public IRecord procValidRecord(IRecord r) {
     String tmpData;
     RecordError tmpError;
@@ -160,7 +162,7 @@ public class WIInputAdapter extends FlatFileInputAdapter {
       this.setTransactionAbort(getTransactionNumber());
     }
 
-    tmpDataRecord.RecordNumber = StreamRecordNumber++;
+    tmpDataRecord.recordNumber = StreamRecordNumber++;
 
     // discard the call if the duration was too short
     if (tmpDataRecord.Duration < MinDuration) {
@@ -180,7 +182,7 @@ public class WIInputAdapter extends FlatFileInputAdapter {
    *
    * @return
    */
-  @Override
+  // REMOVED --> @Override
   public IRecord procErrorRecord(IRecord r) {
 
     // The FlatFileInputAdapter is not able to create error records, so we
@@ -198,7 +200,7 @@ public class WIInputAdapter extends FlatFileInputAdapter {
    *
    * @return
    */
-  @Override
+  // REMOVED --> @Override
   public IRecord procTrailer(IRecord r) {
     TrailerRecord tmpTrailer;
 
@@ -208,4 +210,28 @@ public class WIInputAdapter extends FlatFileInputAdapter {
     tmpTrailer.setRecordCount(StreamRecordNumber);
     return (IRecord) tmpTrailer;
   }
+
+@Override
+public IRecord procValidRecord(FlatRecord r) throws ProcessingException {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+@Override
+public IRecord procErrorRecord(FlatRecord r) throws ProcessingException {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+@Override
+public HeaderRecord procHeader(HeaderRecord r) throws ProcessingException {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+@Override
+public TrailerRecord procTrailer(TrailerRecord r) throws ProcessingException {
+	// TODO Auto-generated method stub
+	return null;
+}
 }
