@@ -164,6 +164,9 @@ public class WIRecord extends RatingRecord {
   public String ContractZoneResult;
   public String ContractDestDescription;
   public ArrayList<String> AggFilter;
+  
+  // TODO
+  public double priceGroup  = 0;
 
   /**
    * Default Constructor for RateRecord, creating the empty record container
@@ -181,8 +184,8 @@ public class WIRecord extends RatingRecord {
    * @param newOriginalData The data to be loaded into the internal field array
    */
   public void loadFields(String newOriginalData) {
-    OriginalData = newOriginalData;
-    fields = OriginalData.split(";");
+    originalData = newOriginalData;
+    fields = originalData.split(";");
   }
 
   /**
@@ -198,7 +201,7 @@ public class WIRecord extends RatingRecord {
     RECORD_TYPE = WI_RECORD_TYPE;
 
     // split the record based on tabs
-    fields = OriginalData.split("\t");
+    fields = originalData.split("\t");
 
     if (fields.length == FIELD_COUNT) {
       // Map the call case
@@ -217,7 +220,7 @@ public class WIRecord extends RatingRecord {
           CallCase = "MOC";
           Direction = "Originating";
           Other_Party_Number = getField(IDX_CALLED_NUMBER);
-          Service = "Voice";
+          service = "Voice";
         }
         break;
         case 1: {
@@ -227,14 +230,14 @@ public class WIRecord extends RatingRecord {
             // Invert the called and calling so that in the future we can
           // identify the other party using zoning (Currently not used)
           Other_Party_Number = getField(IDX_CALLING_NUMBER);
-          Service = "Voice";
+          service = "Voice";
         }
         break;
         case 2: {
           CallCase = "ROAMING";
           Direction = "Roaming";
           Other_Party_Number = "Unknown";
-          Service = "Voice";
+          service = "Voice";
         }
         break;
         case 3: {
@@ -244,28 +247,28 @@ public class WIRecord extends RatingRecord {
             // Invert the called and calling so that in the future we can
           // identify the other party using zoning (Currently not used)
           Other_Party_Number = getField(IDX_CALLING_NUMBER);
-          Service = "Voice";
+          service = "Voice";
         }
         break;
         case 4: {
           CallCase = "PTC";
           Direction = "Originating";
           Other_Party_Number = getField(IDX_CALLED_NUMBER);
-          Service = "Voice";
+          service = "Voice";
         }
         break;
         case 5: {
           CallCase = "TRANSIT";
           Direction = "Transit";
           Other_Party_Number = "Unknown";
-          Service = "Voice";
+          service = "Voice";
         }
         break;
         case 6: {
           CallCase = "SMMO";
           Direction = "Originating";
           Other_Party_Number = getField(IDX_CALLED_NUMBER);
-          Service = "SMS";
+          service = "SMS";
         }
         break;
         case 7: {
@@ -275,14 +278,14 @@ public class WIRecord extends RatingRecord {
             // Invert the called and calling so that in the future we can
           // identify the other party using zoning (Currently not used)
           Other_Party_Number = getField(IDX_CALLING_NUMBER);
-          Service = "SMS";
+          service = "SMS";
         }
         break;
         default: {
           CallCase = "Unknown";
           Direction = "Unknown";
           Other_Party_Number = "Unknown";
-          Service = "Unknown";
+          service = "Unknown";
 
           // Error the record to avoid further processing
           tmpError = new RecordError("ERR_UNKNOWN_CALL_CASE", ErrorType.DATA_VALIDATION);
@@ -292,7 +295,7 @@ public class WIRecord extends RatingRecord {
       }
 
       // Map the voice only things
-      if (Service.equals("Voice")) {
+      if (service.equals("Voice")) {
         // Map the reason for closure
         // Parse the duration
         try {
@@ -375,7 +378,7 @@ public class WIRecord extends RatingRecord {
       try {
         // Pre load the variables with something that will allow processing
         // for the case that we can't get the date
-        EventStartDate = sdfIn.parse("2008-01-01 00:00:00");
+        eventStartDate = sdfIn.parse("2008-01-01 00:00:00");
         CDRMonth = "Unknown";
 
         // Get the call start time
@@ -391,13 +394,13 @@ public class WIRecord extends RatingRecord {
         }
 
         // Map the CDR Month
-        EventStartDate = sdfIn.parse(DateToUse);
+        eventStartDate = sdfIn.parse(DateToUse);
 
         // Get the UTC version of the date
-        UTCEventDate = EventStartDate.getTime() / 1000;
+        utcEventDate = eventStartDate.getTime() / 1000;
 
         // Get the month of the CDR for aggregation
-        CDRMonth = sdfCDRMonth.format(EventStartDate);
+        CDRMonth = sdfCDRMonth.format(eventStartDate);
       } catch (ParseException ex) {
         tmpError = new RecordError("ERR_DATE_INVALID", ErrorType.DATA_VALIDATION);
         addError(tmpError);
@@ -411,7 +414,7 @@ public class WIRecord extends RatingRecord {
       }
 
       // Map the duplicate Check Key
-      DupChkKey = EventStartDate.getTime() + CallCase + getField(WIRecord.IDX_CALL_REFERENCE);
+      DupChkKey = eventStartDate.getTime() + CallCase + getField(WIRecord.IDX_CALL_REFERENCE);
 
       // get the RUM values
       setRUMValue("DUR", Duration);
@@ -439,8 +442,8 @@ public class WIRecord extends RatingRecord {
     StringBuilder tmpReassemble;
 
     if (RECORD_TYPE == WIRecord.WI_RECORD_TYPE) {
-      // We use the string buffer for the reassembly of the record. Avoid
-      // just catenating strings, as it is a LOT slower because of the
+      // We use the string buffer for the reassemble of the record. Avoid
+      // just concatenating strings, as it is a LOT slower because of the
       // java internal string handling (it has to allocate/deallocate many
       // times to rebuild the string).
       tmpReassemble = new StringBuilder(1024);
@@ -466,7 +469,7 @@ public class WIRecord extends RatingRecord {
       return tmpReassemble.toString();
     }
 
-    return OriginalData;
+    return originalData;
   }
 
   /**
@@ -526,7 +529,7 @@ public class WIRecord extends RatingRecord {
       return tmpReassemble.toString();
     }
 
-    return OriginalData;
+    return originalData;
   }
 
   /**
@@ -543,7 +546,7 @@ public class WIRecord extends RatingRecord {
 
     if (RECORD_TYPE == WIRecord.WI_RECORD_TYPE) {
       // We use the string buffer for the reassembly of the record. Avoid
-      // just catenating strings, as it is a LOT slower because of the
+      // just concatenating strings, as it is a LOT slower because of the
       // java internal string handling (it has to allocate/deallocate many
       // times to rebuild the string).
       tmpReassemble = new StringBuilder(1024);
@@ -574,7 +577,7 @@ public class WIRecord extends RatingRecord {
       return tmpReassemble.toString();
     }
 
-    return OriginalData;
+    return originalData;
   }
 
   /**

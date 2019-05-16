@@ -84,7 +84,7 @@ public class DupCheck extends AbstractDuplicateCheck {
 
     if (CurrentRecord.RECORD_TYPE == WIRecord.WI_RECORD_TYPE) {
       try {
-        if (CheckDuplicate(CurrentRecord.EventStartDate, CurrentRecord.DupChkKey)) {
+        if (CheckDuplicate(CurrentRecord.eventStartDate, CurrentRecord.DupChkKey)) {
           // error detected, add duplicate error to the record
           tmpError = new RecordError("ERR_DUPLICATE_RECORD", ErrorType.SPECIAL);
           CurrentRecord.addError(tmpError);

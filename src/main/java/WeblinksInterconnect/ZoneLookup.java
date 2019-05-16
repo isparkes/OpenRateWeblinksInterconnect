@@ -112,7 +112,7 @@ public class ZoneLookup extends AbstractBestMatch {
           tmpCP = new ChargePacket();
           tmpCP.zoneModel = CurrentRecord.ZoneModel;
           tmpCP.zoneResult = CurrentRecord.ZoneResult;
-          tmpCP.priceGroup = CurrentRecord.ZoneResult;
+          tmpCP.priceGroup = CurrentRecord.priceGroup;
           tmpCP.timeModel = "ALL";
           tmpCP.timeResult = "ANY";
           tmpCP.packetType = "I";

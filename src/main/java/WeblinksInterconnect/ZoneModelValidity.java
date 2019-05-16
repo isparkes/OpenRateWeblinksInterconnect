@@ -84,7 +84,7 @@ public class ZoneModelValidity extends AbstractValiditySegmentMatch {
     // We only transform the basic records, and leave the others alone
     if (CurrentRecord.RECORD_TYPE == WIRecord.WI_RECORD_TYPE) {
       // Look up the Destination
-      NewZoneValue = getValiditySegmentMatch("Default", CurrentRecord.ZoneModel, CurrentRecord.UTCEventDate);
+      NewZoneValue = getValiditySegmentMatch("Default", CurrentRecord.ZoneModel, CurrentRecord.utcEventDate);
 
       // Write the information back into the record
       if (!NewZoneValue.equalsIgnoreCase("nomatch")) {
