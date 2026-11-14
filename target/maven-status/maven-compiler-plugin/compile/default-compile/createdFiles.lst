@@ -1,0 +1,16 @@
+WeblinksInterconnect/RateLookup.class
+WeblinksInterconnect/Aggregation.class
+WeblinksInterconnect/WIRecord.class
+WeblinksInterconnect/TrunkICLookup.class
+WeblinksInterconnect/DupCheck.class
+WeblinksInterconnect/AggLoaderDBOutputAdapter.class
+WeblinksInterconnect/Normalisation.class
+WeblinksInterconnect/OperatorLookup.class
+WeblinksInterconnect/WIOutputAdapter.class
+WeblinksInterconnect/ZoneModelValidity.class
+WeblinksInterconnect/SplittingLookup.class
+WeblinksInterconnect/WIInputAdapter.class
+WeblinksInterconnect/ZoneLookup.class
+WeblinksInterconnect/AggLoaderInputAdapter.class
+WeblinksInterconnect/AggregationFilter.class
+WeblinksInterconnect/TrunkLookup.class
