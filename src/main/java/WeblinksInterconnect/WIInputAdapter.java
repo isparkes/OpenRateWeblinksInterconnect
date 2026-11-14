@@ -60,6 +60,10 @@ import OpenRate.exception.ProcessingException;
 import OpenRate.record.*;
 import OpenRate.utils.PropertyUtils;
 import WeblinksInterconnect.WIRecord;
+import OpenRate.record.FlatRecord;
+import OpenRate.record.HeaderRecord;
+import OpenRate.record.IRecord;
+import OpenRate.record.TrailerRecord;
 
 /**
  * This class is an example of how one would write an InputAdapter. An input
@@ -170,7 +174,7 @@ public class WIInputAdapter extends FlatFileInputAdapter {
       tmpDataRecord.addError(tmpError);
     }
 
-    return (IRecord) tmpDataRecord;
+    return tmpDataRecord;
   }
 
   /**
@@ -208,7 +212,7 @@ public class WIInputAdapter extends FlatFileInputAdapter {
     tmpTrailer = (TrailerRecord) r;
 
     tmpTrailer.setRecordCount(StreamRecordNumber);
-    return (IRecord) tmpTrailer;
+    return tmpTrailer;
   }
 
 @Override
