@@ -17,6 +17,7 @@ package WeblinksInterconnect;
 
 import OpenRate.process.AbstractBestMatch;
 import OpenRate.record.ChargePacket;
+import OpenRate.record.TimePacket;
 import OpenRate.record.ErrorType;
 import OpenRate.record.IRecord;
 import OpenRate.record.RecordError;
@@ -54,6 +55,7 @@ public class ZoneLookup extends AbstractBestMatch {
     ArrayList<String> ZoneValue;
     WIRecord CurrentRecord = (WIRecord) r;
     ChargePacket tmpCP;
+    TimePacket tmpTZ;
 
     try {
       // We only transform the basic records, and leave the others alone
@@ -73,7 +75,6 @@ public class ZoneLookup extends AbstractBestMatch {
           tmpCP = new ChargePacket();
           tmpCP.zoneModel = CurrentRecord.ZoneModel;
           tmpCP.zoneResult = CurrentRecord.ZoneResult;
-          tmpCP.priceGroup = CurrentRecord.priceGroup;
           tmpCP.timeModel = "ALL";
           tmpCP.timeResult = "ANY";
           tmpCP.packetType = "I";
@@ -82,6 +83,20 @@ public class ZoneLookup extends AbstractBestMatch {
           tmpCP.ratePlanName = CurrentRecord.ZoneResult;
           tmpCP.service = "Voice";
           tmpCP.subscriptionID = "";
+
+          // The price group lives on a time packet inside the charge packet,
+          // so that a tariff can change during a call. Interconnect rating
+          // here has no time dependency, so there is exactly one time packet
+          // covering the whole call. The zone lookup returns the name of the
+          // price model to use, which is the price group for the RUM map.
+          tmpTZ = new TimePacket();
+          tmpTZ.priceGroup = CurrentRecord.ZoneResult;
+          tmpTZ.timeModel = "ALL";
+          tmpTZ.timeResult = "ANY";
+          tmpTZ.duration = (int) CurrentRecord.Duration;
+          tmpTZ.totalDuration = (int) CurrentRecord.Duration;
+          tmpCP.addTimeZone(tmpTZ);
+
           CurrentRecord.addChargePacket(tmpCP);
         }
       }

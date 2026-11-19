@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Logging configuration for the Weblinks interconnect application.
+
+  OpenRate asks for loggers by name: "Framework", "ErrorLog" and "Statistics"
+  come from the framework itself, and each pipeline logs under its own name as
+  declared in WeblinksInterconnect.properties.xml.
+-->
+<Configuration status="WARN">
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>
+
+    <File name="FrameworkAppender" fileName="log/WIFramework.log">
+      <PatternLayout>
+        <pattern>%d %p %C{1.} [%t] %m%n</pattern>
+      </PatternLayout>
+    </File>
+
+    <File name="ErrorAppender" fileName="log/Error.log">
+      <PatternLayout>
+        <pattern>%d %p %C{1.} [%t] %m%n</pattern>
+      </PatternLayout>
+    </File>
+
+    <File name="StatisticsAppender" fileName="log/WIStatistics.log">
+      <PatternLayout>
+        <pattern>%d %p %C{1.} [%t] %m%n</pattern>
+      </PatternLayout>
+    </File>
+
+    <File name="WIPipeAppender" fileName="log/WIPipe.log">
+      <PatternLayout>
+        <pattern>%d %p %C{1.} [%t] %m%n</pattern>
+      </PatternLayout>
+    </File>
+
+    <File name="AggLoaderAppender" fileName="log/WIAggLoader.log">
+      <PatternLayout>
+        <pattern>%d %p %C{1.} [%t] %m%n</pattern>
+      </PatternLayout>
+    </File>
+  </Appenders>
+
+  <Loggers>
+    <Logger name="Framework" level="info" additivity="false">
+      <AppenderRef ref="FrameworkAppender"/>
+    </Logger>
+
+    <Logger name="ErrorLog" level="debug" additivity="false">
+      <AppenderRef ref="ErrorAppender"/>
+    </Logger>
+
+    <Logger name="Statistics" level="info" additivity="false">
+      <AppenderRef ref="StatisticsAppender"/>
+    </Logger>
+
+    <Logger name="WIPipeline" level="info" additivity="false">
+      <AppenderRef ref="WIPipeAppender"/>
+    </Logger>
+
+    <Logger name="AggLoaderPipeline" level="info" additivity="false">
+      <AppenderRef ref="AggLoaderAppender"/>
+    </Logger>
+
+    <Logger name="WeblinksInterconnect" level="info" additivity="false">
+      <AppenderRef ref="FrameworkAppender"/>
+    </Logger>
+
+    <Root level="error">
+      <AppenderRef ref="Console"/>
+    </Root>
+  </Loggers>
+</Configuration>

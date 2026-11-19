@@ -1,1 +1,0 @@
-This is where Sempahore files will go

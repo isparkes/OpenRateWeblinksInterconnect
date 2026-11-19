@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>OpenRate</groupId>
-  <artifactId>OpenRateSimple</artifactId>
+  <artifactId>OpenRateWeblinksInterconnect</artifactId>
   <version>1.0.0</version>
 
   <licenses>
@@ -47,13 +47,9 @@
         <version>2.5</version>
         <configuration>
           <includes>
-            <include>**/Tyfon/*</include>
-            <include>**/Provisioning/*</include>
-            <include>**/fraud/*</include>
+            <include>**/*.class</include>
+            <include>**/*.java</include>
           </includes>
-          <excludes>
-            <exclude>**/ConfigData/**</exclude>
-          </excludes>
         </configuration>
       </plugin>
             
@@ -77,6 +73,19 @@
             </configuration>
           </execution>
         </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.2.1</version>
+        <configuration>
+          <mainClass>OpenRate.OpenRate</mainClass>
+          <arguments>
+            <argument>-p</argument>
+            <argument>WeblinksInterconnect.properties.xml</argument>
+          </arguments>
+        </configuration>
       </plugin>
     </plugins>
   </build>

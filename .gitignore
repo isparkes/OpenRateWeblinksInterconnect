@@ -1,1 +1,19 @@
 /target/
+
+# Output produced by running the pipeline
+Data/**/*.csv
+Data/**/*.done
+Data/**/*.out
+Data/**/*.dump
+Data/**/*.err
+Data/**/*.err-in
+Data/**/*.loaded
+Data/WeblinksInterconnect/CDRsFromMSC/
+/log/
+/logs/
+Semaphore.txt*
+
+.DS_Store
+
+# Cached listing of the sample archive, rebuilt by feed.sh
+Data/WeblinksInterconnect/.cdr-index

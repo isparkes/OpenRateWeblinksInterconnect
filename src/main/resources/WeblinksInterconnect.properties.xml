@@ -257,7 +257,7 @@
   <Resource>
     <LogFactory>
       <ClassName>OpenRate.logging.LogFactory</ClassName>
-      <Properties>logWeblinksInterconnect.properties</Properties>
+      <Properties>logWeblinksInterconnect.xml</Properties>
       <DefaultCategory>WeblinksInterconnect</DefaultCategory>
     </LogFactory>
 
@@ -316,7 +316,7 @@
           <ClassName>OpenRate.cache.RegexMatchCache</ClassName>
           <DataSourceType>DB</DataSourceType>
           <DataSource>TestDB</DataSource>
-          <SelectStatement>select MAP_GROUP,NUMBER_MATCH,REMOVE_PREFIX,NEW_PREFIX from NORMALISATION_MAP order by RANK</SelectStatement>
+          <SelectStatement>select MAP_GROUP,NUMBER_MATCH,REMOVE_PREFIX,NEW_PREFIX from NORMALISATION_MAP order by `RANK`</SelectStatement>
           <KeyFields>1</KeyFields>
         </NormCache>
         
@@ -325,7 +325,7 @@
           <ClassName>OpenRate.cache.RegexMatchCache</ClassName>
           <DataSourceType>DB</DataSourceType>
           <DataSource>TestDB</DataSource>
-          <SelectStatement>select MAP_GROUP,TRUNK_ID,TRUNK_NAME from TRUNK_MAP order by RANK</SelectStatement>
+          <SelectStatement>select MAP_GROUP,TRUNK_ID,TRUNK_NAME from TRUNK_MAP order by `RANK`</SelectStatement>
           <KeyFields>1</KeyFields>
         </TrunkLookupCache>
 
@@ -347,7 +347,7 @@
           <ClassName>OpenRate.cache.RegexMatchCache</ClassName>
           <DataSourceType>DB</DataSourceType>
           <DataSource>TestDB</DataSource>
-          <SelectStatement>select MAP_GROUP,TRUNK_IN,TRUNK_OUT,RATING_SCENARIO from TRUNK_IC_MAP order by RANK</SelectStatement>
+          <SelectStatement>select MAP_GROUP,TRUNK_IN,TRUNK_OUT,RATING_SCENARIO from TRUNK_IC_MAP order by `RANK`</SelectStatement>
           <KeyFields>2</KeyFields>
         </TrunkICLookupCache>
 
@@ -374,7 +374,7 @@
           <DataSourceType>DB</DataSourceType>
           <DataSource>TestDB</DataSource>
           <PriceModelStatement>select PRICE_MODEL,STEP,TIER_FROM,TIER_TO,BEAT,FACTOR,CHARGE_BASE from PRICE_MODEL</PriceModelStatement>
-          <RUMMapStatement>select PRICE_MODEL, PRICE_MODEL, 'DUR', 'EUR', 'Tiered', '978', '0' from PRICE_MODEL</RUMMapStatement>
+          <RUMMapStatement>select PRICE_MODEL, PRICE_MODEL, 'DUR', 'EUR', 'Tiered', '0' from PRICE_MODEL</RUMMapStatement>
         </RateCache>
         
         <!-- filter which records go into the interconnect billing -->
@@ -399,7 +399,7 @@
           <ClassName>OpenRate.cache.DuplicateCheckCache</ClassName>
           <DataSourceType>DB</DataSourceType>
           <DataSource>TestDB</DataSource>
-          <SelectStatement>select CDR_KEY,CDR_DATE from DUPLICATE_CHECK</SelectStatement>
+          <SelectStatement>select CDR_KEY,CDR_DATE from DUPLICATE_CHECK where CDR_DATE &gt; ?</SelectStatement>
           <DataTable>DUPLICATE_CHECK</DataTable>
           <InsertStatement>insert into DUPLICATE_CHECK (CDR_KEY,CDR_DATE) values (?,?)</InsertStatement>
           <PurgeStatement>delete from DUPLICATE_CHECK where CDR_DATE &lt; ?</PurgeStatement>
@@ -412,7 +412,7 @@
           <ClassName>OpenRate.cache.RegexMatchCache</ClassName>
           <DataSourceType>DB</DataSourceType>
           <DataSource>TestDB</DataSource>
-          <SelectStatement>select MAP_GROUP,CALL_CASE,ZONE_MODEL,ERR_DESC,OUTPUT_LIST from SPLITTING_MAP order by RANK</SelectStatement>
+          <SelectStatement>select MAP_GROUP,CALL_CASE,ZONE_MODEL,ERR_DESC,OUTPUT_LIST from SPLITTING_MAP order by `RANK`</SelectStatement>
           <KeyFields>3</KeyFields>
         </SplittingCache>        
       </CacheableClass>

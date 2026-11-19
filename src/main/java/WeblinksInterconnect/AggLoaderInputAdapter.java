@@ -27,52 +27,49 @@ public class AggLoaderInputAdapter extends FlatFileInputAdapter {
   public AggLoaderInputAdapter() {
   }
 
-//  // REMOVED --> @Override
-//  public IRecord procValidRecord(IRecord r) {
-//      // We don't need to work on the record here, all work is done in
-//    // the output adapter, so just pass the record back untouched
-//    return r;
-//  }
-//
-//  // REMOVED --> @Override
-//  public IRecord procErrorRecord(IRecord r) {
-//    // Do nothing - the input adapter cannot created errored records
-//    return r;
-//  }
-//
-//  // REMOVED --> @Override
-//  public IRecord procHeader(IRecord r) throws ProcessingException {
-//    // Do nothing
-//    return r;
-//  }
-//
-//  // REMOVED --> @Override
-//  public IRecord procTrailer(IRecord r) throws ProcessingException {
-//    // Do nothing
-//    return r;
-//  }
+  /**
+   * Nothing to do on the synthetic header record.
+   *
+   * @param r the header record
+   * @return the record, unchanged
+   */
+  @Override
+  public HeaderRecord procHeader(HeaderRecord r) throws ProcessingException {
+    return r;
+  }
 
-@Override
-public IRecord procValidRecord(FlatRecord r) throws ProcessingException {
-	// TODO Auto-generated method stub
-	return null;
-}
+  /**
+   * All the work for this pipeline is done in the output adapter, which calls
+   * the aggregation stored procedure, so the record passes through untouched.
+   *
+   * @param r the record read from the aggregation results file
+   * @return the record, unchanged
+   */
+  @Override
+  public IRecord procValidRecord(FlatRecord r) throws ProcessingException {
+    return r;
+  }
 
-@Override
-public IRecord procErrorRecord(FlatRecord r) throws ProcessingException {
-	// TODO Auto-generated method stub
-	return null;
-}
+  /**
+   * The flat file input adapter cannot create errored records, so there is
+   * nothing to do here.
+   *
+   * @param r the record
+   * @return the record, unchanged
+   */
+  @Override
+  public IRecord procErrorRecord(FlatRecord r) throws ProcessingException {
+    return r;
+  }
 
-@Override
-public HeaderRecord procHeader(HeaderRecord r) throws ProcessingException {
-	// TODO Auto-generated method stub
-	return null;
-}
-
-@Override
-public TrailerRecord procTrailer(TrailerRecord r) throws ProcessingException {
-	// TODO Auto-generated method stub
-	return null;
-}
+  /**
+   * Nothing to do on the synthetic trailer record.
+   *
+   * @param r the trailer record
+   * @return the record, unchanged
+   */
+  @Override
+  public TrailerRecord procTrailer(TrailerRecord r) throws ProcessingException {
+    return r;
+  }
 }

@@ -84,8 +84,8 @@ public class WIInputAdapter extends FlatFileInputAdapter {
    *
    * @return
    */
-  // REMOVED --> @Override
-  public IRecord procHeader(IRecord r) {
+  @Override
+  public HeaderRecord procHeader(HeaderRecord r) {
     // reset the record numbering
     StreamRecordNumber = 0;
 
@@ -106,8 +106,8 @@ public class WIInputAdapter extends FlatFileInputAdapter {
    *
    * @return
    */
-  // REMOVED --> @Override
-  public IRecord procValidRecord(IRecord r) {
+  @Override
+  public IRecord procValidRecord(FlatRecord r) {
     String tmpData;
     RecordError tmpError;
     boolean MapResult;
@@ -115,8 +115,7 @@ public class WIInputAdapter extends FlatFileInputAdapter {
     // Perform the numbering of the record in the stream, and change the type
     // of the record to "RateRecord". The decision of the type of record is 
     // made in the "ServiceLookup" processing step.
-    FlatRecord originalRecord = (FlatRecord) r;
-    tmpData = originalRecord.getData();
+    tmpData = r.getData();
     tmpDataRecord = new WIRecord();
 
     tmpDataRecord.setOriginalData(tmpData);
@@ -147,8 +146,8 @@ public class WIInputAdapter extends FlatFileInputAdapter {
    *
    * @return
    */
-  // REMOVED --> @Override
-  public IRecord procErrorRecord(IRecord r) {
+  @Override
+  public IRecord procErrorRecord(FlatRecord r) {
 
     // The FlatFileInputAdapter is not able to create error records, so we
     // do not have to do anything for this
@@ -165,38 +164,11 @@ public class WIInputAdapter extends FlatFileInputAdapter {
    *
    * @return
    */
-  // REMOVED --> @Override
-  public IRecord procTrailer(IRecord r) {
-    TrailerRecord tmpTrailer;
-
+  @Override
+  public TrailerRecord procTrailer(TrailerRecord r) {
     // set the trailer record count
-    tmpTrailer = (TrailerRecord) r;
-
-    tmpTrailer.setRecordCount(StreamRecordNumber);
-    return tmpTrailer;
+    r.setRecordCount(StreamRecordNumber);
+    return r;
   }
 
-@Override
-public IRecord procValidRecord(FlatRecord r) throws ProcessingException {
-	// TODO Auto-generated method stub
-	return null;
-}
-
-@Override
-public IRecord procErrorRecord(FlatRecord r) throws ProcessingException {
-	// TODO Auto-generated method stub
-	return null;
-}
-
-@Override
-public HeaderRecord procHeader(HeaderRecord r) throws ProcessingException {
-	// TODO Auto-generated method stub
-	return null;
-}
-
-@Override
-public TrailerRecord procTrailer(TrailerRecord r) throws ProcessingException {
-	// TODO Auto-generated method stub
-	return null;
-}
 }
